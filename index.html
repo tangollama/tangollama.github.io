@@ -8,12 +8,23 @@ width: 100%;
 body, p, h1, a {
 font-family: Verdana, Arial, Helvetica, sans-serif;
 }
+body {
+	background-image: url(img/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+}
+a:link,
+a:visited,
+a:focus,
+a:hover {
+	color: white;
+	text-decoration: none;
+}
 .wrap {
-margin-top: 100px;
-max-width: 960px;
-position: relative;
-text-align: center;
-margin-bottom: 100px;
+	position: absolute;
+	top: 80px;
+	left: 40px;
 }
 h1 {
 width: auto;
@@ -25,10 +36,6 @@ font-size: 14px;
 p.contactme {
 	margin-top: 20px;
     font-size: 12px;
-}
-a:link, a:visited {
-text-decoration: none;
-color: black;
 }
 @media (max-width: 649px) {
 	body {
@@ -54,9 +61,8 @@ color: black;
 </head>
 <body>
 <div class="wrap">
-<img src="img/weblogo.jpg" />
+<h1>Joel Worrall</h1>
 <br>
-<a target="outside" href="http://about.me/tangollama" title="About Me"><img src="img/twitter_header.jpg" border="0" width="300" /></a>
 <br>
 <p class="contactme">
 <a target="outside" href="joelworrallresume.pdf" title="Resume">resume</a> |
