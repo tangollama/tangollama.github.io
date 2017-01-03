@@ -1,0 +1,30 @@
+<head>
+  <meta charset="UTF-8">
+  <title>{% if page.title %}{{ page.title }}{% else %}joelglovier.com{% endif %}</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.png?v=3" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
+  <meta name="copyright" content="Joel Worrall" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {% if page.title %}
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta name="twitter:title" content="{{ page.title }}">
+  {% endif %}
+
+  {% if page.excerpt %}
+  <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
+  <meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
+  {% endif %}
+
+  <meta name="twitter:domain" content="joelworrall.com">
+  <meta name="twitter:site" content="@tangollama">
+  <meta name="twitter:creator" content="@tangollama">
+  <!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
