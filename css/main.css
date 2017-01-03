@@ -1,0 +1,46 @@
+body {
+min-height: 600px;
+width: 100%;
+}
+body, p, h1, a {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+body {
+	background-image: url(/img/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+}
+a:link,
+a:visited,
+a:focus,
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+.wrap {
+	position: absolute;
+	top: 80px;
+	left: 40px;
+}
+h1 {
+width: auto;
+}
+.wrap p {
+margin-top: -20px;
+font-size: 14px;
+}
+p.contactme {
+	margin-top: 20px;
+    font-size: 12px;
+}
+@media (max-width: 649px) {
+	body {
+		width: 400px
+	}
+
+	.wrap {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
