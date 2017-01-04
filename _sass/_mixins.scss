@@ -1,0 +1,41 @@
+@function em( $fontSize, $contextSize: 16 ) {
+  @return 1em * ( $fontSize / $contextSize ); }
+
+@function pct( $size, $context ) {
+  @return percentage( $size / $context ); }
+
+@mixin overflowElipsis {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+// Typography
+
+@mixin sans {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin sans_regular {
+  @include sans;
+  font-weight: 400;
+}
+
+@mixin sans_extrabold {
+  @include sans;
+  font-weight: 800;
+}
+
+@mixin serif {
+  font-family: "Lora", "Minion Pro", Palatino, Georgia, serif;
+}
+
+@mixin serif_regular {
+  @include serif;
+  font-weight: 400;
+}
+
+// media querie tools
+@mixin bp($screen_width) {
+  @media (max-width: $screen_width) { @content; }
+}

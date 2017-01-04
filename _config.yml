@@ -1,0 +1,10 @@
+lsi:            false
+exclude:        ["script", "vendor", "Gemfile", "Gemfile.lock", "config.ru", "Procfile", "Rakefile", "readme.md", "scss"]
+permalink:      /writing/:title
+markdown_ext:   markdown,mkd,mkdn,md
+name:           The online home of Joel Worrall
+description:    "The personal site of Joel Worrall, programmer and entrepreneur."
+url:            http://joelworrall.com
+sass:
+  sass_dir: _sass
+  style: compressed

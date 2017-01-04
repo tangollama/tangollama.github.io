@@ -1,0 +1,60 @@
+.home-content {
+	position: absolute;
+	top: 85px;
+	left: 85px;
+  max-width: 350px;
+
+  @include bp(750px) {
+    left: 45px;
+    top: 45px;
+  }
+
+  @include bp(600px) {
+    position: static;
+    padding: 32px;
+  }
+
+  .name {
+    font-size: 42px;
+    letter-spacing: -1px;
+    @include sans_extrabold;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .job-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding: 6px 0;
+    border-top: 4px solid $border_color;
+    border-bottom: 1px solid $border_color;
+    font-size: 16px;
+    @include sans_regular;
+  }
+
+  .content {
+    @include serif;
+    font-size: 14px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $border_color;
+    margin-bottom: 16px;
+
+    .details { margin: 0; }
+  }
+
+  .contact { margin-bottom: 24px; }
+
+  .contact-link {
+    font-size: 14px;
+    @include serif;
+  }
+
+  .logo {
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .logo-img { vertical-align: middle; }
+
+  .logo-cure { margin-right: 24px; }
+}
