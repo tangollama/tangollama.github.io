@@ -2,4 +2,40 @@
 	position: absolute;
 	top: 85px;
 	left: 85px;
+  max-width: 350px;
+
+  .name {
+    font-size: 42px;
+    letter-spacing: -1px;
+    @include sans_extrabold;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .job-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding: 6px 0;
+    border-top: 4px solid $border_color;
+    border-bottom: 1px solid $border_color;
+    font-size: 16px;
+    @include sans_regular;
+  }
+
+  .content {
+    @include serif;
+    font-size: 14px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $border_color;
+    margin-bottom: 16px;
+
+    .details { margin: 0; }
+  }
+
+  .contact { margin-bottom: 16px; }
+
+  .contact-link {
+    font-size: 14px;
+    @include serif;
+  }
 }
