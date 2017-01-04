@@ -32,10 +32,19 @@
     .details { margin: 0; }
   }
 
-  .contact { margin-bottom: 16px; }
+  .contact { margin-bottom: 24px; }
 
   .contact-link {
     font-size: 14px;
     @include serif;
   }
+
+  .logo {
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .logo-img { vertical-align: middle; }
+
+  .logo-cure { margin-right: 24px; }
 }
