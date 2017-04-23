@@ -1,11 +1,12 @@
 html {
-  background: $true_black url(/img/bg.jpg) no-repeat center center fixed; 
+  background: $true_black url(/img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  @include sans;
 }
-body{
+body {
   @include sans;
   color: $text_color;
   font-size: 16px;
@@ -22,7 +23,6 @@ a {
   font-weight: bold;
   color: $white;
   text-decoration: none;
-
   &:hover {
     text-decoration: underline;
     opacity: .8;
