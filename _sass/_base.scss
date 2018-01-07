@@ -1,5 +1,5 @@
 html {
-  background: $true_black url(/img/bg.jpg) no-repeat center center fixed;
+  background: $true_black url(/img/bg01.jpg) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +21,7 @@ body {
 
 a {
   font-weight: bold;
-  color: $white;
+  color: $true_black;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
