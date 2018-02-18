@@ -1,4 +1,5 @@
 lsi:            false
+baseurl:        /tangollama.github.io
 exclude:        ["script", "vendor", "Gemfile", "Gemfile.lock", "config.ru", "Procfile", "Rakefile", "readme.md", "scss"]
 permalink:      /writing/:title
 markdown_ext:   markdown,mkd,mkdn,md
