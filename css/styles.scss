@@ -1,0 +1,63 @@
+body {
+  font-family: Tahoma;
+}
+header, footer, main {
+  clear: both !important;
+  display: block;
+  min-height: 100px;
+  text-align: center;
+}
+section, article, aside, nav {
+  float: left;
+  margin: 25px;
+  position: relative;
+  text-align: left;
+}
+section, article {
+  width: 60%;
+}
+aside {
+  width: 30%;
+  float: right;
+}
+nav {
+  vertical-align: middle;
+  width: 50%;
+  text-align: right;
+  a {
+    margin-left: 50px;  
+  }
+}
+.floatleft {
+  float: left;
+}
+.logo-img {
+  width: 150px;
+  height: auto;
+}
+img {
+  float: left;
+  position: relative;
+  margin-right: 20px;
+}
+.cta {
+  border: 2px solid #8b0000;
+  border-radius: 25px;
+  background-color: #FF0000;
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+}
+@media only screen and (max-width: 500px) {
+  section, article, aside {
+    width: 90%;
+    float: left;
+    display: block;
+  }
+  nav {
+    width: auto;
+    a {
+      margin-left: 10px;
+    }
+  }
+}
