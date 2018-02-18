@@ -48,3 +48,16 @@ img {
   padding: 10px;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  section, article, aside {
+    width: 90%;
+    float: left;
+    display: block;
+  }
+  nav {
+    width: auto;
+    a {
+      margin-left: 10px;
+    }
+  }
+}
