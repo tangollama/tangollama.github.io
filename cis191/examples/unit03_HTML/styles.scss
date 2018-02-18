@@ -35,6 +35,12 @@ img {
   position: relative;
   margin-right: 20px;
 }
+.cta {
+  border: 2px solid darkred;
+  border-radius: 25px;
+  background-color: red;
+  font-weight: bold;
+}
 @media only screen and (max-width: 500px) {
   section, article, aside {
     width: 90%;
