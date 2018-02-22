@@ -1,0 +1,13 @@
+table {
+  width: 90%;
+  border-block-end-style: dotted;
+}
+tr {
+  min-height: 50px;
+}
+td, th {
+  text-align: left;
+}
+td {
+  width: 33%;
+}

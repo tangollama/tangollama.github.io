@@ -22,11 +22,6 @@ aside {
 }
 nav {
   vertical-align: middle;
-  width: 50%;
-  text-align: right;
-  a {
-    margin-left: 50px;  
-  }
 }
 .floatleft {
   float: left;
@@ -40,24 +35,10 @@ img {
   position: relative;
   margin-right: 20px;
 }
-.cta {
-  border: 2px solid #8b0000;
-  border-radius: 25px;
-  background-color: #FF0000;
-  color: #ffffff;
-  padding: 10px;
-  text-decoration: none;
-}
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   section, article, aside {
     width: 90%;
     float: left;
     display: block;
-  }
-  nav {
-    width: auto;
-    a {
-      margin-left: 10px;
-    }
   }
 }

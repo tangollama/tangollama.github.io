@@ -4,6 +4,12 @@
 	left: 85px;
   max-width: 350px;
 
+  @media (max-width: 900px) { 
+    html {
+      background-position-x: 75px;
+    }
+  }
+
   @include bp(750px) {
     left: 45px;
     top: 45px;
