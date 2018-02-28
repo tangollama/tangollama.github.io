@@ -1,0 +1,51 @@
+body {
+  font-family: Tahoma;
+}
+header, footer, main {
+  clear: both !important;
+  display: block;
+  min-height: 100px;
+  text-align: center;
+}
+section, article, aside, nav {
+  float: left;
+  margin: 25px;
+  position: relative;
+  text-align: left;
+}
+section, article {
+  width: 60%;
+}
+section img {
+  width: 100px;
+}
+section h1 {
+  clear: both;
+  padding-top: 30px;
+}
+aside {
+  width: 30%;
+  float: right;
+}
+nav {
+  vertical-align: middle;
+}
+.floatleft {
+  float: left;
+}
+.logo-img {
+  width: 150px;
+  height: auto;
+}
+img {
+  float: left;
+  position: relative;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 500px) {
+  section, article, aside {
+    width: 90%;
+    float: left;
+    display: block;
+  }
+}
