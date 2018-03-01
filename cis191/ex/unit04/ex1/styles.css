@@ -7,13 +7,13 @@ header, footer, main {
   min-height: 100px;
   text-align: center;
 }
-section, article, aside, nav {
+section, aside, nav {
   float: left;
   margin: 25px;
   position: relative;
   text-align: left;
 }
-section, article {
+section {
   width: 60%;
 }
 section img {
@@ -29,13 +29,27 @@ aside {
 }
 nav {
   vertical-align: middle;
+  width: 50%;
 }
-.floatleft {
+.floatLeft {
   float: left;
 }
-.logo-img {
+.floatRight {
+  float: right;
+}
+.logoImg {
   width: 150px;
   height: auto;
+}
+.myPhotos {
+  padding:10px;
+  border:10px solid #021a40;
+  background-color:#ff0;
+}
+#primaryPhoto {
+  padding:20px;
+  border:10px solid #080808;
+  background-color:#676767;
 }
 img {
   float: left;
