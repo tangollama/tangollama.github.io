@@ -18,6 +18,11 @@ section {
 }
 section img {
   width: 100px;
+  padding-bottom: 5px;
+}
+aside img {
+  width: 200px;
+  padding-bottom: 10px;
 }
 section h1 {
   clear: both;
