@@ -1,0 +1,24 @@
+#biltong {
+  font-family: 'Courier New', Courier, monospace;
+  background-image: url(biltong.jpg);
+  background-repeat: repeat;
+  color: #fff;
+  font-weight: bold;
+  font-size: 150%;
+}
+#biltong nav {
+  padding-top: 50px;
+}
+#biltong a:link, #bacon a:visited, #bacon a:active  {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+#biltong aside {
+  float: left;
+}
+#biltong section {
+  float: right;
+}
+#biltong img {
+  filter: grayscale(100%);
+}

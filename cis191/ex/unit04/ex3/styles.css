@@ -1,0 +1,21 @@
+main p {
+  margin-top: -5px;
+  color: #444444;
+}
+nav {
+  height: 40px;
+  margin-top: 40px;
+  width: 50%;
+  min-width: 420px;
+  /*display: flex;
+  flex-direction: row;*/
+}
+header {
+  /*position: fixed;*/
+  display: block;
+  height: 200px;
+  width: 100%;
+}
+footer p {
+  text-align: center;
+}

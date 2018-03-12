@@ -1,0 +1,10 @@
+@import url(styles.css);
+article > div {
+  column-count: 2;
+}
+h1 {
+  display: block;
+  width: 100%;
+  column-count: 1;
+  clear: both;
+}
