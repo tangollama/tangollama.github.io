@@ -27,7 +27,6 @@ main {
   display: flex;
   flex-direction: row;
   clear: both;
-  /*padding-top: 200px;*/
 }
 main > aside  {
   width: 33%;
@@ -47,7 +46,6 @@ h1, h2, h3, h4 {
   margin-bottom: 10px;
 }
 header {
-  /*position: fixed;*/
   display: block;
   height: 200px;
   width: 100%;

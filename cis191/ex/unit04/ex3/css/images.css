@@ -1,15 +1,16 @@
 @import url(styles.css);
 #imagesPage section li {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
   float: left;
   margin : 10px;
   position: relative;
   list-style: none;
-  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border: 2px ridge rgb(170, 50, 220, .6);
+  overflow: hidden;
   background-size: auto 100px;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 #imagesPage main {
   flex-direction: row-reverse;

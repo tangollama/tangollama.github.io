@@ -11,7 +11,6 @@ nav {
   flex-direction: row;*/
 }
 header {
-  /*position: fixed;*/
   display: block;
   height: 200px;
   width: 100%;
@@ -19,3 +18,12 @@ header {
 footer p {
   text-align: center;
 }
+/*
+#logo_link {
+  width: 200px;
+  height: 200px;
+  background-image: url(logo.png);
+  background-position: -25px -15px;
+  content: " ";
+}
+*/

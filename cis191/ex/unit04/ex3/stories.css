@@ -1,0 +1,6 @@
+h1 {
+  display: block;
+  width: 100%;
+  column-count: 1;
+  clear: both;
+}

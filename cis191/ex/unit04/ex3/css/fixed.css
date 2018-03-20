@@ -1,0 +1,12 @@
+#homepage header {
+  position: fixed;
+  background-color: cornsilk;
+  z-index: 1;
+}
+#homepage main {
+  padding-top: 200px;
+}
+#homepage {
+  padding: 0px;
+  margin: 0px;
+}
