@@ -1,5 +1,6 @@
 @import url(fonts/fonts.css);
 @import url(responsive.css);
+@import url(fixed.css);
 figure img, figure figcaption {
   width: 200px;
 }
