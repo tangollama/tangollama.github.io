@@ -1,0 +1,122 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.mealContainer {
+  margin: 20px;
+}
+.mealContainer > * {
+  background-size: 300px auto;
+  background-repeat: no-repeat;
+  width: 300px;
+}
+/* position relative example */
+.relativeMeal > * {
+  position: relative;
+}
+/*
+.relativeMeal > .bacon {
+  top: 190px;
+  z-index: 2;
+}
+.relativeMeal > .pancakes {
+  z-index: 1;
+}
+.relativeMeal > .plate {
+  top: -190px;
+}
+*/
+/* position absolute example */
+.absoluteMeal {
+  position: absolute;
+  left: 300px;
+  top: 400px;
+}
+.absoluteMeal > * {
+  position: inherit;
+}
+/*
+.absoluteMeal > .bacon {
+  z-index: 2;
+}
+.absoluteMeal > .pancakes {
+  z-index: 1;
+
+}
+.absoluteMeal > .plate {
+  top: 110px;
+}
+*/
+/* float example */
+.floatMeal {
+  float: right;
+}
+.absoluteMeal + .floatMeal {
+  margin-left: 250px;
+}
+/*
+.floatMeal > .bacon {
+  z-index: 3;
+  position: relative;
+  float: right;
+  top: 190px;  
+}
+.floatMeal > .pancakes {
+  float: right;
+  z-index: 2;
+}
+.floatMeal > .plate {
+  float: right;
+  position: relative;
+  z-index: -1;
+  top: -190px;  
+}
+*/
+.bacon {
+  background-image: url(bacon.png);
+  height: 200px;
+}
+.pancakes {
+  background-image: url(pancakes.png);
+  height: 300px;
+}
+.plate {
+  background-image: url(plate.png);
+  height: 200px;
+}
+footer {
+  width: 100%;
+  padding: 10px;
+  size: 24px;
+  text-align: center;
+}
+strong {
+  line-height: 2em;
+}
+header {
+  width: 100%;
+  height: 200px;
+  font-weight: bold;
+  size: 24px;
+  text-align: center;
+}
+#logoImg {
+  height: 200px;
+  align-content: center;
+}
+main {
+  min-height: 1200px;        
+}
+.rowFlex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+header button {
+  font-family: inherit;
+  font-size: 24px;
+  float: right;
+  margin-right: 10%;
+  margin-top: 80px;
+}
