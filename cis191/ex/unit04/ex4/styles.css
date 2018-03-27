@@ -3,6 +3,10 @@ body {
   padding: 0px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
+.stickyBacon {
+  top: 400px !important;
+  position: sticky !important;
+}
 .mealContainer {
   margin: 20px;
 }
@@ -15,7 +19,7 @@ body {
 .relativeMeal > * {
   position: relative;
 }
-/*
+
 .relativeMeal > .bacon {
   top: 190px;
   z-index: 2;
@@ -26,7 +30,7 @@ body {
 .relativeMeal > .plate {
   top: -190px;
 }
-*/
+
 /* position absolute example */
 .absoluteMeal {
   position: absolute;
