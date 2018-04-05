@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" id="defaultStyles" href="styles.css" type="text/css" media="all">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <img id="logoImg" src="logo.png" />
+    </header>
+    <main>
+      <h1>My Table</h1>
+      <div>
+        <table id="cart">
+        </table>
+      </div>
+    </main>
+    <footer>
+      <form id="createTblForm" action="index.html" method="post">
+        <fieldset>
+          <legend>Create Table</legend>
+          <label id="tRows">Rows</label>
+          <input id="tRows" name="rows" value="" type="text" />
+          <label id="tRows">Columns</label>
+          <input id="tCols" name="cols" value="" type="text" />
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </footer>
+  </body>
+</html>
