@@ -38,7 +38,7 @@ function addComment(obj) {
   var title = $.truncateWithEllipses(obj.content, 25);
   var count = $("#comments div").length;
   var commentid = "comment" + count;
-  $("#comments").append('<div class="comment" id="'+commentid+'"><h4>'+title+'</h4><p class="date">'+(new Date())+'</p><p class="commentContent">'+obj.content+'</p><p class="rating">Rating: ?</p></div>');  
+  $("#comments").append('<div class="comment" id="'+commentid+'"><h4>'+title+'</h4><p class="date">'+(new Date())+'</p><p class="commentContent">'+obj.content+'</p><p class="rating">Rating: '+obj.rating+'</p></div>');  
 }
 function addCommentAside(obj) {
   var title = $.truncateWithEllipses(obj.content, 25);
@@ -110,10 +110,12 @@ $(document).ready(function() {
    */  
   $("#addCommentFrm").submit(function() {
     var content = $("#commentField").val();
+    var rating = $("#commentRating").val();
     var comment = {
-      content: content
+      content: content,
+      rating: rating
     };
-    console.dir(content);
+    console.dir(comment);
     addComment(comment);
     addCommentAside(comment);
     $("#addCommentFrm")[0].reset();
@@ -121,4 +123,14 @@ $(document).ready(function() {
   });
 
   $(".clickable").click(navToComment);
+
+  $("#baconIpsumBtn").click(function() {
+    $.getJSON('https://baconipsum.com/api/?callback=?', { 
+      'type': 'all-meat', 
+      'start-with-lorem': 0, 
+      'sentences': 4 
+    }, function(baconGoodness) {
+      $("#commentField").val(baconGoodness);
+    });
+  });
 });

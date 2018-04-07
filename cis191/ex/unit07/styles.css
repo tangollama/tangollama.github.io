@@ -9,7 +9,10 @@ button {
   background-color: tomato;
   color: snow;
   font-size: 16px;
-  padding: 5px;
+  padding: 5px 15px 5px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 #comments {
   margin-bottom: 100px;
@@ -21,16 +24,22 @@ button {
   margin-bottom: 10px;
 }
 #commentField {
-  width: 50%;
+  width: 300px;
   height: 50px;
 }
+fieldset, form {
+  width: fit-content;
+}
 fieldset > * {
-  vertical-align: middle;
+  vertical-align: top;
 }
 label  {
-  margin-right: 10px;
+  float: left;
   font-weight: bold;
   font-size: 1.2em;
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 .comment {
   border-radius: 10px;
@@ -52,6 +61,7 @@ footer {
   padding: 10px;
   size: 24px;
   text-align: center;
+  align-content: center;
   position: fixed;
   bottom: 0px;
   z-index: 1;
@@ -111,8 +121,10 @@ header {
   height: 100px;
   align-content: center;
 }
-label {
-  margin-left: 20px;
+label > span:nth-of-type(1) {
+  margin-right: 20px;
+  vertical-align: top;
+  height: auto;
 }
 main {
   align-content: center;
@@ -142,6 +154,8 @@ td {
 #blogMain > aside {
   width: 20%;
   margin-left: 10px;
+  position: relative;
+  float: right;
 }
 #commentsSummary {
   list-style: none;
