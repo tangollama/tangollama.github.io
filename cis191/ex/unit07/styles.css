@@ -153,12 +153,3 @@ td {
 .clickable {
   cursor: pointer;
 }
-@media only screen and (max-width: 800px) {
-  main {
-    flex-direction: column;
-  }
-  main > * {
-    width: 95%;
-    display: block;
-  }
-}
