@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bacon Blog</title>
+    <link rel="stylesheet" id="defaultStyles" href="styles.css" type="text/css" media="all">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+        <img id="logoImg" src="logo.png" />
+    </header>
+    <main id="blogMain">
+      <article>
+        <h1>t-bone corned beef porchetta</h1>
+        <figure><img src="warthog.jpg" alt="wart hog" /><figcaption>Delicious Wart Hog!</figcaption></figure>
+        <p>Spicy jalapeno bacon ipsum dolor amet sirloin strip steak spare ribs cow, porchetta pork loin shankle filet mignon pig salami bacon fatback kielbasa turducken. Tongue meatball kevin andouille, hamburger venison salami rump ball tip doner beef ribs tri-tip sausage. Beef rump boudin shank buffalo prosciutto tail chuck doner t-bone. Tongue jerky t-bone swine, burgdoggen pastrami sirloin pancetta pork loin tri-tip doner shank meatloaf pork. Ground round prosciutto chuck, tri-tip bresaola venison swine.></p>
+        <p>Brisket pork capicola, kielbasa pork loin buffalo pork chop chicken corned beef jowl doner beef. Andouille ground round shank doner pancetta tongue shoulder corned beef turkey leberkas boudin tail capicola sirloin salami. Capicola pancetta beef, short ribs venison meatloaf chicken bacon tri-tip pork belly pork loin. Fatback kevin pastrami tail prosciutto pork belly.</p>
+        <p>Rump shankle andouille kielbasa bacon swine. Ham kevin bacon jowl cow t-bone flank ham hock. Meatball ribeye andouille tenderloin shank. Swine spare ribs biltong, boudin andouille t-bone landjaeger flank kevin pig tri-tip. Salami pastrami landjaeger tail spare ribs, alcatra jowl. Tail doner hamburger bacon.</p>
+        <p>Ground round ribeye meatball turkey pork chop burgdoggen salami flank bacon pig kielbasa sirloin. Tri-tip brisket ball tip, cupim meatloaf andouille drumstick prosciutto landjaeger leberkas short ribs chuck swine bacon. Prosciutto hamburger leberkas beef meatloaf tongue pork ball tip swine pork belly rump turkey t-bone. Shoulder pig capicola picanha shank.</p>
+        <p>Landjaeger buffalo tenderloin jowl picanha pancetta shank sausage pastrami fatback rump drumstick jerky chuck turkey. Frankfurter swine ball tip, shankle kevin bresaola fatback ham corned beef. Shank sausage jowl cow. Sausage fatback short loin, pork chop capicola beef drumstick hamburger. Ribeye shankle capicola, frankfurter picanha chuck burgdoggen venison kevin pork belly shank pork loin leberkas.</p>
+        <section id="comments">
+          <div class="comment" id="comment0">
+            <h4>What I really appreciate about this is&hellip;</h4>
+            <p class="date">Sunday, January 25, 2018</p>
+            <p class="commentContent">What I really appreciate about this is the way I can write a comment about bacon.</p>
+            <p class="rating">Rating: 5</p>
+          </div>
+          <div class="comment" id="comment1">
+            <h4>I also really like this about the post&hellip;</h4>
+            <p class="date">Sunday, January 18, 2018</p>
+            <p class="commentContent">I also really like this about the post: the way I can write a comment about bacon.</p>
+            <p class="rating">Rating: 4</p>
+          </div>
+        </section>
+      </article>
+      <aside>
+        <h3>Comments</h3>
+        <ul id="commentsSummary">
+          <li class="clickable" data-commentId="comment0">What I really appreciate about this is&hellip;</li>
+          <li class="clickable" data-commentId="comment1">I also really like this about the post&hellip;</li>
+        </ul>
+      </aside>
+    </main>
+    <footer>
+      <form id="addCommentFrm" action="blog.html" method="post">
+        <fieldset>
+          <legend>Join the Conversation</legend>
+          <label for="commentField">Comment</label>
+          <textarea name="comment" id="commentField"></textarea>
+          <input type="submit" value="Submit" />              
+        </fieldset>
+      </form>
+    </footer>
+  </body>
+</html>

@@ -11,21 +11,26 @@
       <img id="logoImg" src="logo.png" />
     </header>
     <main>
-      <h1>My Table</h1>
+      <h1>Table O' Meat</h1>
       <div>
-        <table id="cart">
+        <table id="tblOMeat">
         </table>
       </div>
     </main>
     <footer>
-      <form id="createTblForm" action="index.html" method="post">
+      <form id="createTblForm" action="table.html" method="get">
         <fieldset>
           <legend>Create Table</legend>
-          <label id="tRows">Rows</label>
-          <input id="tRows" name="rows" value="" type="text" />
-          <label id="tRows">Columns</label>
-          <input id="tCols" name="cols" value="" type="text" />
-          <input type="submit" value="Submit" />
+          <label>
+            <span>Rows</span>
+            <input id="tRows" name="rows" value="" type="text" />
+          </label>
+          <label>
+            <span>Columns</span>
+            <input id="tCols" name="cols" value="" type="text" />
+          </label>
+          <button type="submit">Make it so.</button>
+          <button type="reset" id="resetTbl">Reset Table</button>
         </fieldset>
       </form>
     </footer>

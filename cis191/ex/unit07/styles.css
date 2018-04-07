@@ -1,7 +1,51 @@
+@import url(http://joelworrall.com/cis191/ex/unit04/ex3/fonts/fonts.css);
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: 'Proxima Nova';
+}
+button {
+  font-family: 'Proxima Nova';
+  background-color: tomato;
+  color: snow;
+  font-size: 16px;
+  padding: 5px;
+}
+#comments {
+  margin-bottom: 100px;
+}
+#comments h4 {
+  text-align: left;
+  text-shadow: 0px 0px grey;
+  padding-left: 0px;
+  margin-bottom: 10px;
+}
+#commentField {
+  width: 50%;
+  height: 50px;
+}
+fieldset > * {
+  vertical-align: middle;
+}
+label  {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.comment {
+  border-radius: 10px;
+  background-color: seashell;
+  padding: 10px 20px 10px;
+  margin-bottom: 10px;
+}
+.date {
+  font-style: italic; 
+}
+.rating {
+  font-weight: bold;
+}
+.commentContent {
+  font-size: 1.2em;
 }
 footer {
   width: 100%;
@@ -13,35 +57,108 @@ footer {
   z-index: 1;
   background-color: azure;
 }
+figure img, figure figcaption {
+  width: 200px;
+}
+input[type='submit'] {
+  font-family: 'Proxima Nova';
+  background-color: cyan;
+  border-radius: 10px;
+  border-style: groove;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  min-width: 100px;
+}
+#hiddenDiv {
+  display: none;
+}
+h1, h2, h3, h4, legend {
+  clear: both;
+  display: block;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  text-shadow: -1px 1px grey;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+figcaption {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+figure {
+  border: 10px solid grey;
+  margin: 0px 20px 20px 10px;
+  outline: black dotted;
+  padding: 10px;
+  width: fit-content;
+  float: left;
+}
 strong {
   line-height: 2em;
 }
 header {
   width: 100%;
-  height: 200px;
+  height: 100px;
   font-weight: bold;
   size: 24px;
   text-align: center;
   background-color: azure;
 }
 #logoImg {
-  height: 200px;
+  height: 100px;
   align-content: center;
 }
 label {
   margin-left: 20px;
 }
 main {
-  text-align: center;
   align-content: center;
+  margin-bottom: 120px;
 }
-#cart {
+#tblOMeat {
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
+  margin-bottom: 100px;
 }
 td {
   min-width: 50px;
   min-height: 25px;;
   border: 1px solid darkgray;
+  padding: 5px;
+  color: whitesmoke;
+}
+#blogMain {
+  display: flex;
+  flex-direction: row;
+}
+#blogMain > article {
+  width: 70%;
+  margin-left: 20px;
+}
+#blogMain > aside {
+  width: 20%;
+  margin-left: 10px;
+}
+#commentsSummary {
+  list-style: none;
+
+}
+#commentsSummary li {
+  margin-bottom: 10px;
+}
+.clickable {
+  cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+  main > * {
+    width: 95%;
+    display: block;
+  }
 }
