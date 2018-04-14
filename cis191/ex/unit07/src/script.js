@@ -109,6 +109,15 @@ $(document).ready(function() {
    * Take action on the addCommentFrm in blog.html
    */  
   $("#addCommentFrm").submit(function() {
+    var content = $("#commentField").val();
+    var rating = $("#commentRating").val();
+    var comment = {
+      content: content,
+      rating: rating
+    };
+    console.dir(comment);
+    addComment(comment);
+    addCommentAside(comment);
     $("#addCommentFrm")[0].reset();
     return false;
   });

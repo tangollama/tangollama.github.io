@@ -18,12 +18,19 @@
       </div>
     </main>
     <footer>
-      <form>
+      <form id="createTblForm" action="table.html" method="get">
         <fieldset>
           <legend>Create Table</legend>
-          <input type="hidden" value="5" name="rows" />
-          <input type="hidden" value="4" name="cols" />
-          <button type="submit">Make it so.</button>          
+          <label>
+            <span>Rows</span>
+            <input id="tRows" name="rows" value="" type="text" />
+          </label>
+          <label>
+            <span>Columns</span>
+            <input id="tCols" name="cols" value="" type="text" />
+          </label>
+          <button type="submit">Make it so.</button>
+          <button type="reset" id="resetTbl">Reset Table</button>
         </fieldset>
       </form>
     </footer>

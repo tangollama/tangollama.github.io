@@ -48,10 +48,27 @@
       </aside>
     </main>
     <footer>
-      <form action="blog.html" method="get">
-          <input type="hidden" value="Hello World!" name="param1" />
-          <!--<button id="baconIpsumBtn" type="button">Bacon Me!</button>-->
+      <form id="addCommentFrm" action="blog.html" method="get">
+        <fieldset>
+          <legend>Join the Conversation</legend>
+          <label><span>Rating</span>
+            <select id="commentRating" name="rating">
+              <optgroup label="Not So Much">
+                <option value="1">Didn't Like It (1)</option>
+                <option value="2">Not Bad (2)</option>
+                <option value="3">Neutral (3)</option>
+              </optgroup>
+              <optgroup label="Well Done">
+                  <option value="4">I Like It (4)</option>
+                  <option value="5">I Really Like It (5)</option>
+                </optgroup>
+              </select>
+          </label>
+          <label><span>Comment</span>
+          <textarea name="comment" id="commentField"></textarea></label>
+          <button id="baconIpsumBtn" type="button">Bacon Me!</button>
           <button type="submit">Submit</button>
+        </fieldset>
       </form>
     </footer>
   </body>
