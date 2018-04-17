@@ -1,0 +1,132 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#outputWindow {
+  width: 70%;
+  min-height: 400px;
+  margin-left: 15%;
+  margin-right: 15%;
+  border: solid 4px tomato;
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 10px;
+  background: #f4f4f4;
+  font-size: 14px;
+  overflow-wrap: break-word;
+  white-space: pre;
+}
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: tomato;
+  color: snow;
+  font-size: 16px;
+  padding: 5px 15px 5px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+fieldset, form {
+  width: fit-content;
+}
+fieldset > * {
+  vertical-align: top;
+}
+label  {
+  float: left;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+footer {
+  width: 100%;
+  padding: 10px;
+  size: 24px;
+  text-align: center;
+  align-content: center;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1;
+  background-color: azure;
+}
+figure img, figure figcaption {
+  width: 200px;
+}
+input[type='submit'] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: cyan;
+  border-radius: 10px;
+  border-style: groove;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  min-width: 100px;
+}
+#hiddenDiv {
+  display: none;
+}
+h1, h2, h3, h4, legend {
+  clear: both;
+  display: block;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  text-shadow: -1px 1px grey;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+figcaption {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+figure {
+  border: 10px solid grey;
+  margin: 0px 20px 20px 10px;
+  outline: black dotted;
+  padding: 10px;
+  width: fit-content;
+  float: left;
+}
+strong {
+  line-height: 2em;
+}
+header {
+  width: 100%;
+  height: 200px;
+  font-weight: bold;
+  size: 24px;
+  text-align: center;
+  background-color: azure;
+}
+#logoImg {
+  height: 200px;
+  align-content: center;
+}
+label > span:nth-of-type(1) {
+  margin-right: 20px;
+  vertical-align: top;
+  height: auto;
+}
+main {
+  align-content: center;  
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: row;
+}
+#mainContent {
+  width: 70%;
+  position: sticky;
+  top: 0px;
+}
+aside {
+  width: 30%;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-right: 20px;
+}
+#q2Instructions, #q3Instructions, #q4Instructions {
+  display: none;
+}

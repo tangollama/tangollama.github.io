@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Tester</title>
+    <link rel="stylesheet" id="defaultStyles" href="styles.css" type="text/css" media="all">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="script.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <img id="logoImg" src="logo.png" />
+    </header>
+    <main>
+      <div id="mainContent">
+        <h1>Output Window</h1>
+        <div id="outputWindow">
+
+        </div>
+      </div>
+      <aside>
+        <section id="q1Instructions">
+          <h3>Q1: An exclusive series of inputs</h3>
+          <ul>
+            <li>Create a series of inputs that submit a single HTTP variable to the form's action</li>
+            <li>Make the label for the inputs "Do you like bacon?"</li>
+            <li>Make the name of that input "baconQ"</li>
+            <li>The values for the inputs should be: "yes", "no", and "maybe"</li>
+          </ul>
+        </section>
+        <section id="q2Instructions">
+          <h3>Q2: Login form</h3>
+          <ul>
+            <li>Create two inputs for receiving a username and password</li>
+            <li>Name them... (you guessed it) username and password respectively</li>            
+          </ul>
+        </section>
+        <section id="q3Instructions">
+          <h3>Q3: Save Password?</h3>
+          <ul>
+            <li>Create a input below the username and password that allows the indicate if they would like to save their username in a cookie on this browser</li>
+            <li>Name that input "saveUsername"</li>            
+          </ul>
+        </section>
+        <section id="q4Instructions">
+          <h3>Q4: Select your favorite game meat</h3>
+          <ul>
+            <li>Create a select box with the following options / values
+              <ul>
+                <li>Warthog</li>
+                <li>Kudu</li>
+                <li>Crocodile</li>
+                <li>Ostrich</li>
+              </ul>
+            </li>
+            <li>Name the HTTP variable passed back "gameSelect"</li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+    <footer>
+      <form id="formTester" onsubmit="return false">
+        <fieldset>
+          <legend>Form Tester</legend>
+          <label>
+            <span>Question</span>
+            <select name="q" id="formQ">   
+              <option value="1">An exclusive series of inputs</option>
+            </select>
+          </label>
+          <button id="answerBtn">Submit my Answer</button>          
+        </fieldset>
+      </form>
+    </footer>
+  </body>
+</html>
