@@ -79,7 +79,7 @@ module.exports = {
       options: {
         name: `joelworrall.com`,
         short_name: `joelworrall.com`,
-        description: `This is my personal site.`,
+        description: `My personal website.`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,

@@ -4,7 +4,7 @@ import PostTemplate from "./post-template"
 
 const SubTitle = ({ ttr, date, author }) => (
   <h5 className="text-muted mb-5">
-    Time to read: {ttr} <small>min</small> | {date} | {author}
+    {date} | {author}
   </h5>
 )
 

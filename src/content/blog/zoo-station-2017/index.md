@@ -82,7 +82,7 @@ I am absolutely still committed to the open source project as it moves fully out
 
 The project continues to make good progress, and — if you’re interested in checking it out — it’s actually ready for use. You can [demo, install, or download it directly to your desktop](http://hospitalrun.io/tryit), thanks to the magic of projects like [Electron](http://electron.atom.io) and [Docker](http://docker.com).
 
-<img alt="Try HospitalRun" src="../../../../imgs/hospitalrun.png" style="width: 80%;margin:20px;" />
+<img alt="Try HospitalRun" src="/imgs/try_hospitalrun.png" style="width: 80%;margin:20px;" />
 
 
 You can try HospitalRun right now at [hospitalrun.io/tryit](http://hospitalrun.io/tryit).
