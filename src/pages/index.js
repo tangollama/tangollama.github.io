@@ -1,18 +1,23 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 // import ThemeContext from "../utils/theme"
-import { PageLayout, BlogLink } from "../components"
-import { SEO, Utils } from "../utils"
-import { Container, Image } from "react-bootstrap"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { PageLayout, BlogLink } from "../components";
+import { SEO, Utils } from "../utils";
+import { Container, Image } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default ({ data }) => {
-  const { unemployed, firstName, lastName, occupation } = data.site.siteMetadata
+  const {
+    unemployed,
+    firstName,
+    lastName,
+    occupation,
+  } = data.site.siteMetadata;
   // const { dark } = useContext(ThemeContext)
-  const allFeaturedImages = data.allFile.edges || []
-  const allPosts = data.allMdx.edges || []
-  const regex = /\/[blog].*\/|$/
-  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
+  const allFeaturedImages = data.allFile.edges || [];
+  const allPosts = data.allMdx.edges || [];
+  const regex = /\/[blog].*\/|$/;
+  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex);
   return (
     <PageLayout>
       <SEO title="Home" />
@@ -38,9 +43,7 @@ export default ({ data }) => {
             <span className="first-name">{firstName}</span>&nbsp;
             <span className="last-name">{lastName}</span>
           </h1>
-          <p>
-            {occupation}&nbsp;
-          </p>
+          <p>{occupation}&nbsp;</p>
         </Container>
         <hr className="my-3 w-25" />
         <div className="d-md-inline-flex icons-container">
@@ -97,7 +100,7 @@ export default ({ data }) => {
           </a>
         </div>
       </Container>
-      <h2 style={{ marginTop: '50px' }}>The Latest</h2>
+      <h2 style={{ marginTop: "50px" }}>The Latest</h2>
       <Container
         fluid
         className="p-3 w-auto text-left d-flex flex-wrap justify-content-center"
@@ -115,8 +118,8 @@ export default ({ data }) => {
         ))}
       </Container>
     </PageLayout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
@@ -170,4 +173,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

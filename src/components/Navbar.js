@@ -1,21 +1,30 @@
-import React, { useContext } from "react"
-import ThemeContext from "../utils/theme"
-import { Navbar, Nav, Form } from "react-bootstrap"
-import { Link } from "gatsby"
-import "./Fontawesome.js"
+import React, { useContext } from "react";
+import ThemeContext from "../utils/theme";
+import { Navbar, Nav, Form } from "react-bootstrap";
+import { Link } from "gatsby";
+import "./Fontawesome.js";
 
 export default () => {
-  const { dark, toggleDark, toString } = useContext(ThemeContext)
+  const { dark, toggleDark, toString } = useContext(ThemeContext);
   return (
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand as={Link} to="/">
-      <svg style={{width:'60px', height: '60px'}} className={`brand-icon ${dark ? "empire" : "rebel"}`} version="1.0" xmlns="http://www.w3.org/2000/svg"
- viewBox="0 0 1428.000000 1428.000000" role="img">
-<title>Home</title>
-<g transform="translate(0.000000,1428.000000) scale(0.100000,-0.100000)"
-stroke="none">
-
-<path fill="currentColor" d="M6259 10821 c-117 -38 -219 -127 -269 -236 -45 -97 -50 -145 -50
+        <svg
+          style={{ width: "60px", height: "60px" }}
+          className={`brand-icon ${dark ? "empire" : "rebel"}`}
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1428.000000 1428.000000"
+          role="img"
+        >
+          <title>Home</title>
+          <g
+            transform="translate(0.000000,1428.000000) scale(0.100000,-0.100000)"
+            stroke="none"
+          >
+            <path
+              fill="currentColor"
+              d="M6259 10821 c-117 -38 -219 -127 -269 -236 -45 -97 -50 -145 -50
 -450 l0 -285 -1169 0 c-1281 0 -1250 1 -1433 -60 -359 -121 -639 -418 -747
 -795 l-26 -90 -3 -2240 c-2 -2210 -2 -2240 18 -2332 102 -469 463 -814 943
 -899 123 -21 7130 -21 7254 0 170 30 313 88 453 181 229 153 403 393 477 660
@@ -29,8 +38,11 @@ l28 100 0 2260 0 2260 -29 100 c-117 406 -414 701 -827 822 l-94 27 -1217 4
 -2835 -2800 0 -2800 0 0 2835 0 2835 2800 0 2800 0 0 -2835z m848 2806 c264
 -77 468 -287 543 -556 12 -42 14 -403 14 -2255 l0 -2205 -23 -69 c-72 -214
 -211 -379 -399 -475 -115 -58 -237 -80 -445 -81 l-158 0 0 2836 0 2836 198 -5
-c162 -4 210 -8 270 -26z"/>
-<path fill="currentColor" d="M6195 8730 c-560 -85 -1010 -512 -1132 -1072 -21 -100 -23 -370 -3
+c162 -4 210 -8 270 -26z"
+            />
+            <path
+              fill="currentColor"
+              d="M6195 8730 c-560 -85 -1010 -512 -1132 -1072 -21 -100 -23 -370 -3
 -488 76 -456 270 -905 554 -1285 243 -325 747 -812 1176 -1135 126 -95 345
 -240 362 -240 5 0 53 28 106 62 289 185 627 467 995 828 263 259 422 450 571
 689 297 472 469 1060 426 1450 -66 605 -524 1086 -1129 1186 -149 25 -388 17
@@ -42,10 +54,10 @@ c162 -4 210 -8 270 -26z"/>
 -110 -100 -9 -10 -184 -155 -255 -211 -121 -97 -221 -169 -234 -169 -20 0
 -361 262 -437 335 -6 5 -39 35 -74 65 -189 163 -500 472 -623 619 -274 329
 -471 729 -559 1136 -40 185 -43 363 -10 500 43 170 164 374 288 481 143 125
-327 214 501 244 92 15 273 11 370 -9z"/>
-</g>
-</svg>
-
+327 214 501 244 92 15 273 11 370 -9z"
+            />
+          </g>
+        </svg>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse
@@ -75,5 +87,5 @@ c162 -4 210 -8 270 -26z"/>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  )
-}
+  );
+};

@@ -1,10 +1,8 @@
-const visit = require('unist-util-visit');
+const visit = require("unist-util-visit");
 
 const remarkExternalLinks = () => (tree) => {
   const isTarget = (node) => {
-    return (
-      node.type === 'link' && node.url.indexOf('joelworrall.com') < 0
-    );
+    return node.type === "link" && node.url.indexOf("joelworrall.com") < 0;
   };
 
   visit(tree, isTarget, (node) => {
@@ -14,8 +12,8 @@ const remarkExternalLinks = () => (tree) => {
       // Protect
       node.data = {
         hProperties: {
-          target: '__blank',
-          rel: 'noopener noreferrer',
+          target: "__blank",
+          rel: "noopener noreferrer",
         },
       };
     }

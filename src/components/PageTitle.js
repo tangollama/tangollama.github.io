@@ -1,5 +1,5 @@
-import React from "react"
-import { Jumbotron } from "react-bootstrap"
+import React from "react";
+import { Jumbotron } from "react-bootstrap";
 
 export default ({ title, children }) => (
   <Jumbotron className="bg-none pt-4 mb-5 pb-0">
@@ -7,4 +7,4 @@ export default ({ title, children }) => (
       {title}&nbsp;<span>{children}</span>&nbsp;
     </h1>
   </Jumbotron>
-)
+);

@@ -1,14 +1,14 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { PageLayout, PageTitle, WorkHistory } from "../components"
-import { SEO, Utils } from "../utils"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Container from "react-bootstrap/Container"
+import React from "react";
+import { graphql } from "gatsby";
+import { PageLayout, PageTitle, WorkHistory } from "../components";
+import { SEO, Utils } from "../utils";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Container from "react-bootstrap/Container";
 
 export default ({ data }) => {
-  const history = data.allMdx.edges || []
-  const images = data.allFile.edges || []
-  const imageMap = Utils.getImageMap(images, /\/[work].*\/|$/)
+  const history = data.allMdx.edges || [];
+  const images = data.allFile.edges || [];
+  const imageMap = Utils.getImageMap(images, /\/[work].*\/|$/);
   return (
     <PageLayout>
       <SEO title="Resume" />
@@ -35,8 +35,8 @@ export default ({ data }) => {
         ))}
       </Container>
     </PageLayout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
@@ -81,4 +81,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

@@ -1,17 +1,18 @@
 /** https://www.gatsbyjs.org/docs/add-seo-component/ */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 
 const SEO = ({ description, lang, meta, image: img, title, pathname }) => {
-  const { site } = useStaticQuery(query)
+  const { site } = useStaticQuery(query);
 
-  const metaDescription = description || site.siteMetadata.description
-  const image = img && img.src ? `${site.siteMetadata.siteUrl}${img.src}` : null
+  const metaDescription = description || site.siteMetadata.description;
+  const image =
+    img && img.src ? `${site.siteMetadata.siteUrl}${img.src}` : null;
 
-  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null;
 
   return (
     <Helmet
@@ -41,10 +42,10 @@ const SEO = ({ description, lang, meta, image: img, title, pathname }) => {
         )
         .concat(meta)}
     />
-  )
-}
+  );
+};
 
-export default SEO
+export default SEO;
 
 SEO.propTypes = {
   description: PropTypes.string,
@@ -57,13 +58,13 @@ SEO.propTypes = {
     width: PropTypes.number.isRequired,
   }),
   pathname: PropTypes.string,
-}
+};
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-}
+};
 
 const query = graphql`
   query SEO {
@@ -77,4 +78,4 @@ const query = graphql`
       }
     }
   }
-`
+`;

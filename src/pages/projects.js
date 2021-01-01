@@ -1,14 +1,14 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { PageLayout, PageTitle, ProjectLink } from "../components"
-import { SEO, Utils } from "../utils"
-import Container from "react-bootstrap/Container"
+import React from "react";
+import { graphql } from "gatsby";
+import { PageLayout, PageTitle, ProjectLink } from "../components";
+import { SEO, Utils } from "../utils";
+import Container from "react-bootstrap/Container";
 
 export default ({ data }) => {
-  const allProjects = data.allMdx.edges || []
-  const allFeaturedImages = data.allFile.edges || []
-  const regex = /\/[projects].*\/|$/
-  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex, true, 3)
+  const allProjects = data.allMdx.edges || [];
+  const allFeaturedImages = data.allFile.edges || [];
+  const regex = /\/[projects].*\/|$/;
+  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex, true, 3);
 
   return (
     <PageLayout>
@@ -31,8 +31,8 @@ export default ({ data }) => {
         </section>
       </Container>
     </PageLayout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
@@ -77,4 +77,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

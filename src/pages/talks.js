@@ -1,20 +1,19 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { PageLayout, PageTitle, BlogLink } from "../components"
-import { SEO, Utils } from "../utils"
-import { Container } from "react-bootstrap"
+import React from "react";
+import { graphql } from "gatsby";
+import { PageLayout, PageTitle, BlogLink } from "../components";
+import { SEO, Utils } from "../utils";
+import { Container } from "react-bootstrap";
 
 export default ({ data }) => {
-
-  const allFeaturedImages = data.allFile.edges || []
-  const allPosts = data.allMdx.edges || []
-  const regex = /\/[talks].*\/|$/
-  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
-  console.debug([allPosts, featuredImageMap])
+  const allFeaturedImages = data.allFile.edges || [];
+  const allPosts = data.allMdx.edges || [];
+  const regex = /\/[talks].*\/|$/;
+  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex);
+  console.debug([allPosts, featuredImageMap]);
   return (
     <PageLayout>
       <SEO title="Blog" />
-      <PageTitle title="Talks"/>
+      <PageTitle title="Talks" />
       <p>Check out a few of my public presentations.</p>
       <Container
         fluid
@@ -33,8 +32,8 @@ export default ({ data }) => {
         ))}
       </Container>
     </PageLayout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
@@ -79,4 +78,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

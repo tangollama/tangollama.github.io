@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-const remarkExternalLinks = require('./plugins/remark-external-link-icon');
+const remarkExternalLinks = require("./plugins/remark-external-link-icon");
 
 module.exports = {
   /* Your site config here */
@@ -15,16 +15,19 @@ module.exports = {
     lastName: `Worrall`,
     description: `My personal site`,
     occupation: `Tech Leader | Team Builder | Tinkerer | Teacher`,
-    keywords: [`Joel Worrall`, `Worrall`, `Personal`, `Blog`, `Resume`, `Projects`, `Work`],
+    keywords: [
+      `Joel Worrall`,
+      `Worrall`,
+      `Personal`,
+      `Blog`,
+      `Resume`,
+      `Projects`,
+      `Work`,
+    ],
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
     unemployed: false,
-    designations: [
-      `Tech Leader`,
-      `Team Builder`,
-      `Tinkerer`,
-      `Teacher`,
-    ],
+    designations: [`Tech Leader`, `Team Builder`, `Tinkerer`, `Teacher`],
   },
   plugins: [
     `gatsby-plugin-preload-link-crossorigin`,
@@ -104,4 +107,4 @@ module.exports = {
       },
     },
   ],
-}
+};

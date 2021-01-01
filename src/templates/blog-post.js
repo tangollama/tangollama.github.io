@@ -1,19 +1,19 @@
-import React from "react"
-import { graphql } from "gatsby"
-import PostTemplate from "./post-template"
+import React from "react";
+import { graphql } from "gatsby";
+import PostTemplate from "./post-template";
 
 const SubTitle = ({ ttr, date, author }) => (
   <h5 className="text-muted mb-5">
     {date} | {author}
   </h5>
-)
+);
 
 export default ({ data }) => {
-  console.debug(data)
-  const post = data.mdx
+  console.debug(data);
+  const post = data.mdx;
   // console.log(post.frontmatter.slug);
-  const img = data.file.childImageSharp
-  console.log(img);
+  const img = data.file.childImageSharp;
+  // console.log(img);
   return (
     <PostTemplate
       title={post.frontmatter.title}
@@ -28,8 +28,8 @@ export default ({ data }) => {
       excerpt={post.excerpt}
       html={post.body}
     />
-  )
-}
+  );
+};
 
 export const query = graphql`
   query($regex: String) {
@@ -58,4 +58,4 @@ export const query = graphql`
       relativePath
     }
   }
-`
+`;

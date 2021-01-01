@@ -1,9 +1,9 @@
-import React from "react"
-import Img from "gatsby-image"
-import { Container, Row, Col, Badge } from "react-bootstrap"
+import React from "react";
+import Img from "gatsby-image";
+import { Container, Row, Col, Badge } from "react-bootstrap";
 
 const CompanyCard = ({ frontmatter, image }) => {
-  const { company, position, startDate, endDate, location } = frontmatter
+  const { company, position, startDate, endDate, location } = frontmatter;
   return (
     <Container fluid className="m-auto work-history">
       <Img
@@ -23,8 +23,8 @@ const CompanyCard = ({ frontmatter, image }) => {
         </h5>
       </div>
     </Container>
-  )
-}
+  );
+};
 
 export default ({ html, frontmatter, image }) => {
   return (
@@ -44,7 +44,7 @@ export default ({ html, frontmatter, image }) => {
         <Col className="col-md-4 col-1"></Col>
         <Col className="col-md-8 col-1">
           <div className="d-inline-flex">
-            {frontmatter.tags.map(tag => (
+            {frontmatter.tags.map((tag) => (
               <Badge key={tag} pill className="mr-2 p-0 px-3 resume-tags">
                 <h4>
                   <small>{tag}</small>
@@ -55,5 +55,5 @@ export default ({ html, frontmatter, image }) => {
         </Col>
       </Row>
     </Container>
-  )
-}
+  );
+};

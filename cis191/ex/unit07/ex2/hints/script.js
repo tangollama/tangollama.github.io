@@ -1,17 +1,18 @@
-$(document).ready(function() {
+$(document).ready(function () {
   /**
    * Add to the jQuery base with a function that decodes a URL into key value pairs.
-   * 
+   *
    * @param {string} name - the name of the HTTP GET parameter we're seeking
    */
-  $.urlParam = function(name){
-    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-      if (results==null){
-        return null;
-      }
-      else{
-        return decodeURI(results[1]) || 0;
-      }
+  $.urlParam = function (name) {
+    var results = new RegExp("[?&]" + name + "=([^&#]*)").exec(
+      window.location.href
+    );
+    if (results == null) {
+      return null;
+    } else {
+      return decodeURI(results[1]) || 0;
+    }
   };
 
   if (test1(true)) {
@@ -20,8 +21,7 @@ $(document).ready(function() {
     }
   }
 
-
-  $("#answerBtn").click(function() {
+  $("#answerBtn").click(function () {
     var q = parseInt($("#formQ").val());
     console.log(q);
     if (q == 1) {
@@ -40,22 +40,27 @@ function test1(quiet) {
   var frm = $("#formTester");
   baconQ = frm.find("input[name='baconQ']");
   if (baconQ.length == 0) {
-    output("No variable found by the name of baconQ. Try again.", quiet)
+    output("No variable found by the name of baconQ. Try again.", quiet);
     return false;
-  } 
+  }
   var baconQs = frm.find("input[name='baconQ']");
   if (baconQs.length != 3) {
-    output("There must be three inputs with the name BaconQ. Try again.", quiet);
+    output(
+      "There must be three inputs with the name BaconQ. Try again.",
+      quiet
+    );
     return false;
-  } 
-  baconQs.each(function() {
+  }
+  baconQs.each(function () {
     if ($(this).attr("type") != "radio") {
       output("Incorrect input type for input named baconQ. Try again.", quiet);
       return false;
     } else {
     }
   });
-  output("<b>Question 1 Correct!</b> found 3 inputs named baconQ of type radio");
+  output(
+    "<b>Question 1 Correct!</b> found 3 inputs named baconQ of type radio"
+  );
   addQ2();
   return true;
 }
@@ -92,7 +97,10 @@ function test3(quiet) {
   var frm = $("#formTester");
   var save = frm.find("input[name='saveUsername']");
   if (save.length == 0 || save.attr("type") != "checkbox") {
-    output("Did not find an appropriate input for saveUsername. Try again.", quiet);
+    output(
+      "Did not find an appropriate input for saveUsername. Try again.",
+      quiet
+    );
     return false;
   }
   output("<b>Question 3 Correct!</b> found saveUsername checkbox");
@@ -101,7 +109,9 @@ function test3(quiet) {
 }
 function addQ4() {
   if ($("#q4Instructions").css("display") == "none") {
-    $("#formQ").append("<option value='4'>Select your favorite game meat</option>");
+    $("#formQ").append(
+      "<option value='4'>Select your favorite game meat</option>"
+    );
     $("#q4Instructions").css("display", "block");
   }
 }
@@ -109,7 +119,10 @@ function test4(quiet) {
   var frm = $("#formTester");
   var gameSelect = frm.find("select[name='gameSelect']");
   if (gameSelect.length == 0) {
-    output("Did not find an appropriate input for gameSelect. Try again.", quiet);
+    output(
+      "Did not find an appropriate input for gameSelect. Try again.",
+      quiet
+    );
     return false;
   }
   var options = gameSelect.find("option");
@@ -117,11 +130,12 @@ function test4(quiet) {
     output("Did not find 4 options within gameSelect. Try again.", quiet);
     return false;
   }
-  output("<b>Question 4 Correct!</b> found four options for gameSelect select box");
+  output(
+    "<b>Question 4 Correct!</b> found four options for gameSelect select box"
+  );
   output("<img src='mission_accomplished.jpg' width='90%' />");
   return true;
 }
 function output(val, quiet) {
-  if (!quiet)
-    $("#outputWindow").html($("#outputWindow").html() + "\n" + val);
+  if (!quiet) $("#outputWindow").html($("#outputWindow").html() + "\n" + val);
 }

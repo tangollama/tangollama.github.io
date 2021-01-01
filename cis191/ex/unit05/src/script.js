@@ -1,5 +1,5 @@
 function colorMe() {
-  return '#'+Math.floor(Math.random()*16777215).toString(16);
+  return "#" + Math.floor(Math.random() * 16777215).toString(16);
 }
 function adventureTime() {
   var img = document.querySelector("#logoImg");
@@ -18,9 +18,9 @@ function adventureTime() {
   document.querySelector("header button").style.backgroundColor = colorMe();
 }
 function setSong(el) {
-  el.style.cursor = 'pointer';
+  el.style.cursor = "pointer";
   el.setAttribute("onclick", "baconPancakesSong()");
 }
 function baconPancakesSong() {
-  window.open("https://www.youtube.com/watch?v=r57zosAFNw8");  
+  window.open("https://www.youtube.com/watch?v=r57zosAFNw8");
 }

@@ -1,20 +1,23 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { PageLayout, PageTitle, BlogLink } from "../components"
-import { SEO, Utils } from "../utils"
-import { Container } from "react-bootstrap"
+import React from "react";
+import { graphql } from "gatsby";
+import { PageLayout, PageTitle, BlogLink } from "../components";
+import { SEO, Utils } from "../utils";
+import { Container } from "react-bootstrap";
 
 export default ({ data }) => {
-  const allFeaturedImages = data.allFile.edges || []
-  const allPosts = data.allMdx.edges || []
-  const regex = /\/[blog].*\/|$/
-  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
+  const allFeaturedImages = data.allFile.edges || [];
+  const allPosts = data.allMdx.edges || [];
+  const regex = /\/[blog].*\/|$/;
+  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex);
   console.debug(allPosts);
   return (
     <PageLayout>
       <SEO title="Blog" />
       <PageTitle title="Blog">Posts</PageTitle>
-      <p>When I write something for public, career-focused consumption, it ends up here.</p>
+      <p>
+        When I write something for public, career-focused consumption, it ends
+        up here.
+      </p>
       <Container
         fluid
         className="p-3 w-auto text-left d-flex flex-wrap justify-content-center"
@@ -32,8 +35,8 @@ export default ({ data }) => {
         ))}
       </Container>
     </PageLayout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
@@ -78,4 +81,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

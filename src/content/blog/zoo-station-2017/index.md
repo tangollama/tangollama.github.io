@@ -12,13 +12,13 @@ date: "2017-05-15"
 
 _Reposted from [here](https://medium.com/@tangollama/tangollama-zoo-station-2017-34a46df6674a)._
 
-Hello. I have news to share, and rather than repeat this conversation a few hundred times, I decided to try to offer it here_._
+Hello. I have news to share, and rather than repeat this conversation a few hundred times, I decided to try to offer it here*.*
 
 ## The Summary.
 
-* As of today, I’m no longer serving full-time with [CURE International](http://cure.org).
-* Rather than hop right into another job, I’m going to take the Summer to figure out when and where to hitch my proverbial wagon to another team.
-* While I’m in transition, I’m staying plenty busy with [consulting](http://joelworrall.com), some personal learning and development, a passion project, and making more time for my family.
+- As of today, I’m no longer serving full-time with [CURE International](http://cure.org).
+- Rather than hop right into another job, I’m going to take the Summer to figure out when and where to hitch my proverbial wagon to another team.
+- While I’m in transition, I’m staying plenty busy with [consulting](http://joelworrall.com), some personal learning and development, a passion project, and making more time for my family.
 
 If you’re interested in the details, read on.
 
@@ -56,9 +56,9 @@ If you see me in real life or on the Interwebs, I’ll let you know how it’s g
 
 I initiated life as a full-time freelancer in my mid-twenties, and even though I intentionally returned to a corporate setting over the last dozen years to grow myself as a manager and leader, I’ve always maintained an infrequent but purposeful side-gig as a consultant. So this Summer, I’m planning to work part-time, consulting with:
 
-* **Non-profits:** building actionable plans for how they can transition and thrive by transforming their unique mission into a digital organization.
-* **Tech companies:** helping companies in the technology industries make meaningful contributions to social causes as well as derive real value from their non-profit programs.
-* **Small-to-medium size software companies:** providing strategic support as they modernize their business models and improve their product strategies (i.e. rent-a-CTO).
+- **Non-profits:** building actionable plans for how they can transition and thrive by transforming their unique mission into a digital organization.
+- **Tech companies:** helping companies in the technology industries make meaningful contributions to social causes as well as derive real value from their non-profit programs.
+- **Small-to-medium size software companies:** providing strategic support as they modernize their business models and improve their product strategies (i.e. rent-a-CTO).
 
 A _portion_ of that work is going to be contracting with an agency called [Masterworks](http://masterworks.com). I’ll be supporting their [Experience Design](http://masterworks.com/capabilities/) and [Management Consulting](http://masterworks.com/consulting/) practices as a lead technologist. There are some great people at Masterworks serving some equally great causes, and I’m looking forward to interacting professionally with people that I’ve admired from afar.
 
@@ -83,7 +83,6 @@ I am absolutely still committed to the open source project as it moves fully out
 The project continues to make good progress, and — if you’re interested in checking it out — it’s actually ready for use. You can [demo, install, or download it directly to your desktop](http://hospitalrun.io/tryit), thanks to the magic of projects like [Electron](http://electron.atom.io) and [Docker](http://docker.com).
 
 <img alt="Try HospitalRun" src="/imgs/try_hospitalrun.png" style="width: 80%;margin:20px;" />
-
 
 You can try HospitalRun right now at [hospitalrun.io/tryit](http://hospitalrun.io/tryit).
 One of the _other_ things I’m hoping to do in 2017 is sort out what structure or entity is best equipped to stand with HospitalRun in this next season. If you have thoughts or assistance to offer, [please say so](mailto:joel@joelworrall.com?subject=I+think+I+can+help+you+with+HospitalRun). If you’re leading an organization that would be interested in being a part of that solution, again, [please say so](mailto:joel@joelworrall.com?subject=Let+me+help+you+make+EMR's+great...+for+once.).

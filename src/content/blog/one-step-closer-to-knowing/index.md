@@ -12,11 +12,11 @@ _With appropriate nods to_ [_Bono_](https://open.spotify.com/album/2nPJlUlcyQ24e
 
 It’s been an eventful 12 months. [Exactly one year ago,](/@tangollama/tangollama-zoo-station-2017-34a46df6674a) I exited an 8-year journey with CURE International. Since then, I’ve…
 
-* invested a lot of time with my family,
-* authored a book (more on that later),
-* consulted and volunteered for a number of nonprofits,
-* spent the lion’s share of the year working with some [**great people**](https://masterworks.com/team/)**,** building some meaningful technology products at Masterworks, and
-* started teaching (part-time) in the Computer Science department of my alma mater, [Messiah College](https://www.instagram.com/p/BfPZus-l2Go/).
+- invested a lot of time with my family,
+- authored a book (more on that later),
+- consulted and volunteered for a number of nonprofits,
+- spent the lion’s share of the year working with some [**great people**](https://masterworks.com/team/)**,** building some meaningful technology products at Masterworks, and
+- started teaching (part-time) in the Computer Science department of my alma mater, [Messiah College](https://www.instagram.com/p/BfPZus-l2Go/).
 
 I also began working a [Life Plan](https://www.clarity.guide/for-individuals/) (highly recommended), became _moderately_ more healthy, and finally got involved in my [church](https://lcbcchurch.com/harrisburg).
 

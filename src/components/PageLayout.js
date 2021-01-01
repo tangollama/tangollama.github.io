@@ -1,7 +1,7 @@
-import React from "react"
-import { Container } from "react-bootstrap"
-import Header from "./Header"
-import Footer from "./Footer"
+import React from "react";
+import { Container } from "react-bootstrap";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export default ({ children }) => (
   <Container fluid className="px-0 theme-light app-container">
@@ -11,4 +11,4 @@ export default ({ children }) => (
     </Container>
     <Footer />
   </Container>
-)
+);
