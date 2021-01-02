@@ -62,7 +62,7 @@ export default ({ data }) => {
               adjunct instructor
             </a>{" "}
             in Computer Science at Messiah University. You can track with my
-            entire work history <a href="/resume.pdf">here</a> and{" "}
+            entire work history <a href="/joelworrallresume.pdf">here</a> and{" "}
             <a
               href="http://linkedin.com/in/jworrall"
               target="_blank"
