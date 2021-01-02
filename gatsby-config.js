@@ -112,5 +112,20 @@ module.exports = {
         shortname: `joelworrall-com`
       }
     },
+    {
+      resolve: 'gatsby-plugin-newrelic',
+      options: {
+        configs: {
+          instrumentationType: 'proAndSPA',
+            accountId: '2529112',
+            trustKey: '2529112',
+            agentID: '938138915',
+            licenseKey: 'a773426d7f',
+            applicationID: '938138915',
+            beacon: 'bam.nr-data.net',
+            errorBeacon: 'bam.nr-data.net'
+        }
+      }
+    }
   ],
 };
