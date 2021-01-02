@@ -53,7 +53,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="https://linkedin.com/jworrall"
+            href="https://linkedin.com/in/jworrall"
             target="_blank"
             rel="noopener noreferrer"
           >
