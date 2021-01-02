@@ -34,14 +34,22 @@ export default ({ data }) => {
               </li>
               <li>and nonprofits navigate digital transformation</li>
             </ul>
-            Currently, I lead Open Source at{" "}
-            <a target="_blank" href="https://opensource.newrelic.com" rel="noreferrer">
-              New Relic
+            Currently, I'm part of the Developer Products team at{" "}
+            <a target="_blank" href="https://stripe.com/docs" rel="noreferrer">
+              Stripe
             </a>
             .
           </p>
           <p>
-            Previously, I led technology and marketing for{" "}
+            Previously, I served as the head of Open Source at{" "}
+            <a
+              target="_blank"
+              href="https://opensource.newrelic.com"
+              rel="noreferrer"
+            >
+              New Relic
+            </a>
+            . Before that, I led technology and marketing for{" "}
             <a href="http://cure.org" target="_blank" rel="noreferrer">
               CURE International
             </a>
@@ -62,7 +70,7 @@ export default ({ data }) => {
               adjunct instructor
             </a>{" "}
             in Computer Science at Messiah University. You can track with my
-            entire work history <a href="/joelworrallresume.pdf">here</a> and{" "}
+            entire work history <a href="/resume.pdf">here</a> and{" "}
             <a
               href="http://linkedin.com/in/jworrall"
               target="_blank"

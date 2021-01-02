@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 // import ThemeContext from "../utils/theme"
-import { PageLayout } from "../components";
-import { SEO } from "../utils";
+import { PageLayout, BlogLink } from "../components";
+import { SEO, Utils } from "../utils";
 import { Container, Image } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -13,6 +13,11 @@ export default ({ data }) => {
     lastName,
     occupation,
   } = data.site.siteMetadata;
+  // const { dark } = useContext(ThemeContext)
+  const allFeaturedImages = data.allFile.edges || [];
+  const allPosts = data.allMdx.edges || [];
+  const regex = /\/[blog].*\/|$/;
+  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex);
   return (
     <PageLayout>
       <SEO title="Home" />
@@ -29,9 +34,11 @@ export default ({ data }) => {
           </p>
         )}
         <Container className="py-0 my-0">
-          <h1 style={{
-            marginTop: '10px'
-          }}>
+          <h1
+            style={{
+              marginTop: "10px"
+            }}
+          >
             <span className="first-name">{firstName}</span>&nbsp;
             <span className="last-name">{lastName}</span>
           </h1>
@@ -92,12 +99,70 @@ export default ({ data }) => {
           </a>
         </div>
       </Container>
+      <h2 style={{ marginTop: "50px" }}>The Latest</h2>
+      <Container
+        fluid
+        className="p-3 w-auto text-left d-flex flex-wrap justify-content-center"
+      >
+        {allPosts.map(({ node }) => (
+          <div key={node.id} className="p-3">
+            <BlogLink
+              to={node.fields.slug}
+              featuredImage={featuredImageMap[node.fields.slug]}
+              title={node.frontmatter.title}
+              subtitle={node.frontmatter.date}
+              excerpt={node.frontmatter.excerpt}
+            />
+          </div>
+        ))}
+      </Container>
     </PageLayout>
   );
 };
 
 export const query = graphql`
   query {
+    allMdx(
+      limit: 1
+      filter: { fileAbsolutePath: { regex: "/blog/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            description
+            tags
+            author
+            date(formatString: "DD MMMM, YYYY")
+            excerpt
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+    allFile(
+      filter: {
+        extension: { eq: "jpg" }
+        relativePath: { regex: "/feature/" }
+        relativeDirectory: { regex: "/content/blog/" }
+      }
+    ) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          relativePath
+        }
+      }
+    }
     site {
       siteMetadata {
         unemployed
