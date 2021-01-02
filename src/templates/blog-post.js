@@ -1,11 +1,12 @@
 import React from "react";
 import { graphql } from "gatsby";
 import PostTemplate from "./post-template";
-import { CommentCount } from 'gatsby-plugin-disqus';
+import { CommentCount } from "gatsby-plugin-disqus";
 
 const SubTitle = ({ ttr, date, author, disqusConfig }) => (
   <h5 className="text-muted mb-5">
-    {date} | {author} | <CommentCount config={disqusConfig} placeholder={'No comments'} />
+    {date} | {author} |{" "}
+    <CommentCount config={disqusConfig} placeholder={"No comments"} />
   </h5>
 );
 
@@ -19,7 +20,7 @@ export default ({ data }) => {
     url: `https://joelworrall.com/blog/${post.fields.slug}/`,
     identifier: post.id,
     title: post.frontmatter.title,
-  }
+  };
   return (
     <PostTemplate
       title={post.frontmatter.title}

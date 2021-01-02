@@ -4,9 +4,16 @@ import { PageLayout, PageTitle } from "../components";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { MDXProvider } from "@mdx-js/react";
 import SEO from "../utils/seo";
-import { Disqus } from 'gatsby-plugin-disqus';
+import { Disqus } from "gatsby-plugin-disqus";
 
-export default ({ title, excerpt, html, subTitle, featuredImage, disqusConfig }) => (
+export default ({
+  title,
+  excerpt,
+  html,
+  subTitle,
+  featuredImage,
+  disqusConfig,
+}) => (
   <PageLayout>
     <SEO title={title} description={excerpt} />
     <Container className="text-center" fluid>

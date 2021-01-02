@@ -35,7 +35,11 @@ export default ({ data }) => {
               <li>and nonprofits navigate digital transformation</li>
             </ul>
             Currently, I lead Open Source at{" "}
-            <a target="_blank" href="https://opensource.newrelic.com" rel="noreferrer">
+            <a
+              target="_blank"
+              href="https://opensource.newrelic.com"
+              rel="noreferrer"
+            >
               New Relic
             </a>
             .
