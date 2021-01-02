@@ -6,7 +6,7 @@ export default () => {
   return (
     <div className="footer text-muted text-center">
       <span className="m-auto">
-        <b>{author}</b> &copy; {new Date().getFullYear()}. Made with&nbsp;
+        <b>{author}</b> &copy; {new Date().getFullYear()}. <a href="https://github.com/tangollama/tangollama.github.io">Coded</a> with&nbsp;
         <span className="heart">&nbsp;❤&nbsp;</span> thanks to&nbsp;
         <a href="https://www.gatsbyjs.org/">Gatsby</a> and{" "}
         <a href="https://www.gatsbyjs.com/starters/surudhb/gatsby-personal-site-template">
