@@ -9,7 +9,7 @@ const SubTitle = ({ ttr, date, author }) => (
 );
 
 export default ({ data }) => {
-  console.debug(data);
+  // console.debug(data);
   const post = data.mdx;
   // console.log(post.frontmatter.slug);
   const img = data.file.childImageSharp;

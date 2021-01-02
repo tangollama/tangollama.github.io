@@ -138,7 +138,7 @@ $(document).ready(function () {
       content: content,
       rating: rating,
     };
-    console.dir(comment);
+    // console.dir(comment);
     addComment(comment);
     addCommentAside(comment);
     $("#addCommentFrm")[0].reset();

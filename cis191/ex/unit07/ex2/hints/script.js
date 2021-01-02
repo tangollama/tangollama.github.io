@@ -23,7 +23,7 @@ $(document).ready(function () {
 
   $("#answerBtn").click(function () {
     var q = parseInt($("#formQ").val());
-    console.log(q);
+    // console.log(q);
     if (q == 1) {
       test1();
     } else if (q == 2) {
@@ -72,7 +72,7 @@ function addQ2() {
 }
 function test2(quiet) {
   var frm = $("#formTester");
-  console.log("test2");
+  // console.log("test2");
   var uname = frm.find("input[name='username']");
   var pswd = frm.find("input[name='password']");
   if (uname.length == 0 || uname.attr("type") != "text") {

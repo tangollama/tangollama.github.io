@@ -26,7 +26,7 @@ export default () => {
       }
     }
   `);
-  console.debug("Images!", data);
+  // console.debug("Images!", data);
   const images = data.allFile.edges.map(({ node }) => node.childImageSharp);
 
   // `images` is an array of objects with `thumb` and `full`

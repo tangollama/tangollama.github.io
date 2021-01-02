@@ -9,10 +9,10 @@ export default ({ data }) => {
   const allPosts = data.allMdx.edges || [];
   const regex = /\/[talks].*\/|$/;
   const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex);
-  console.debug([allPosts, featuredImageMap]);
+  // console.debug([allPosts, featuredImageMap]);
   return (
     <PageLayout>
-      <SEO title="Blog" />
+      <SEO title="Talks" />
       <PageTitle title="Talks" />
       <p>Check out a few of my public presentations.</p>
       <Container

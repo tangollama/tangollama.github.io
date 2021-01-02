@@ -13,12 +13,6 @@ const SubTitle = ({ subTitle }) => (
 
 export default ({ data }) => {
   const post = data.mdx;
-  console.log(post.frontmatter.slug);
-  const img = data.allFile.edges.find((edge) => {
-    console.log(`Seeking ${post.fields.slug} in ${edge.node.relativePath}`);
-    return edge.node.relativePath.indexOf(post.fields.slug) > 0;
-  });
-  console.log(img);
   return (
     <PageLayout>
       <SEO
@@ -51,24 +45,6 @@ export const query = graphql`
       excerpt
       fields {
         slug
-      }
-    }
-    allFile(
-      filter: {
-        extension: { eq: "jpg" }
-        relativePath: { regex: "/feature/" }
-        relativeDirectory: { regex: "/content/talks/" }
-      }
-    ) {
-      edges {
-        node {
-          childImageSharp {
-            fluid(maxWidth: 1600) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-          relativePath
-        }
       }
     }
   }

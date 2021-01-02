@@ -9,7 +9,7 @@ export default ({ data }) => {
   const allPosts = data.allMdx.edges || [];
   const regex = /\/[blog].*\/|$/;
   const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex);
-  console.debug(allPosts);
+  // console.debug(allPosts);
   return (
     <PageLayout>
       <SEO title="Blog" />
