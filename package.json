@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "GATSBY_NEWRELIC_ENV=production gatsby build",
-    "deploy": "GATSBY_NEWRELIC_ENV=productiongatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "GATSBY_NEWRELIC_ENV=production gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md,mdx}\"",
     "start": "npm run develop",
