@@ -5,7 +5,7 @@ import { CommentCount } from 'gatsby-plugin-disqus';
 
 const SubTitle = ({ ttr, date, author, disqusConfig }) => (
   <h5 className="text-muted mb-5">
-    {date} | {author} | <CommentCount config={disqusConfig} placeholder={'...'} />
+    {date} | {author} | <CommentCount config={disqusConfig} placeholder={'No comments'} />
   </h5>
 );
 
