@@ -1,10 +1,11 @@
 import React from "react";
 import { graphql } from "gatsby";
 import PostTemplate from "./post-template";
+import { CommentCount } from 'gatsby-plugin-disqus';
 
-const SubTitle = ({ ttr, date, author }) => (
+const SubTitle = ({ ttr, date, author, disqusConfig }) => (
   <h5 className="text-muted mb-5">
-    {date} | {author}
+    {date} | {author} | <CommentCount config={disqusConfig} placeholder={'No comments'} />
   </h5>
 );
 
@@ -14,6 +15,11 @@ export default ({ data }) => {
   // console.log(post.frontmatter.slug);
   const img = data.file.childImageSharp;
   // console.log(img);
+  const disqusConfig = {
+    url: `https://joelworrall.com/blog/${post.fields.slug}/`,
+    identifier: post.id,
+    title: post.frontmatter.title,
+  }
   return (
     <PostTemplate
       title={post.frontmatter.title}
@@ -22,11 +28,13 @@ export default ({ data }) => {
           ttr={post.timeToRead}
           date={post.frontmatter.date}
           author={post.frontmatter.author}
+          disqusConfig={disqusConfig}
         />
       }
       featuredImage={img.fluid.src}
       excerpt={post.excerpt}
       html={post.body}
+      disqusConfig={disqusConfig}
     />
   );
 };

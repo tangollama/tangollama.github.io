@@ -106,5 +106,11 @@ module.exports = {
         showSpinner: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `joelworrall-com`
+      }
+    },
   ],
 };
