@@ -2,6 +2,7 @@
 title: "Zoo Station 2017"
 tags: ["Job Announcement"]
 description: "Leaving CURE International announcement"
+excerpt: "My 2017 announcement that I was leaving CURE International and taking some time away."
 author: "Joel Worrall"
 date: "2017-05-15"
 ---

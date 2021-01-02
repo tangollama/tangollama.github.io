@@ -2,6 +2,7 @@
 title: "One Step Closer to Knowing"
 tags: ["Job Announcement"]
 description: "Joining New Relic announcement"
+excerpt: "My 2018 announcement that I was joining New Relic."
 author: "Joel Worrall"
 date: "2018-05-15"
 ---
