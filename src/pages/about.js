@@ -34,22 +34,14 @@ export default ({ data }) => {
               </li>
               <li>and nonprofits navigate digital transformation</li>
             </ul>
-            Currently, I'm part of the Developer Products team at{" "}
-            <a target="_blank" href="https://stripe.com/docs" rel="noreferrer">
-              Stripe
+            Currently, I lead Open Source at{" "}
+            <a target="_blank" href="https://opensource.newrelic.com" rel="noreferrer">
+              New Relic
             </a>
             .
           </p>
           <p>
-            Previously, I served as the head of Open Source at{" "}
-            <a
-              target="_blank"
-              href="https://opensource.newrelic.com"
-              rel="noreferrer"
-            >
-              New Relic
-            </a>
-            . Before that, I led technology and marketing for{" "}
+            Previously, I led technology and marketing for{" "}
             <a href="http://cure.org" target="_blank" rel="noreferrer">
               CURE International
             </a>
