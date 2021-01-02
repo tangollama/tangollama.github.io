@@ -117,3 +117,22 @@ body {
 .idempotenceThumb {
   min-height: 150px;
 }
+
+@media screen and (max-width: 500px) {
+  .subHeading {
+    font-size: 0.75rem;
+  }
+  .icons-container a {
+    margin: 10px;
+  }
+
+  .icons {
+    font-size: 2.5rem;
+    margin: 0.1rem;
+    color: $gray-600;
+  }
+
+  .m-auto {
+    font-size: 0.5rem;
+  }
+}
