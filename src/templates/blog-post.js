@@ -46,7 +46,8 @@ export const query = graphql`
       }
     }
     file(
-      extension: { eq: "jpg" }
+      name: { regex: "/feature/" }
+      extension: { in: ["jpg", "png"] }
       relativePath: { regex: $regex }
       relativeDirectory: { regex: "/content/blog/" }
     ) {

@@ -147,7 +147,7 @@ export const query = graphql`
     }
     allFile(
       filter: {
-        extension: { eq: "jpg" }
+        extension: { in: ["jpg", "png"] }
         relativePath: { regex: "/feature/" }
         relativeDirectory: { regex: "/content/blog/" }
       }
