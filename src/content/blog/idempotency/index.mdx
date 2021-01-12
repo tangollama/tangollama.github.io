@@ -12,7 +12,7 @@ import ImageGallery from "components/ImageGallery";
 
 First, rather than bury the lead. I'll get to the point.
 
-I'm exiting [New Relic](http://opensource.newrelic.com) this month and joining the Developer Products team at [Stripe](https://stripe.com/docs/api). If you're surprised by that news, I assure you that you're not as surprised as [January 2020 Joel](https://www.youtube.com/watch?v=Ms7capx4Cb8) would have been to read it. Thus, the start of 2021 marks a season of change.
+I'm completing my time at [New Relic](http://opensource.newrelic.com) this month and joining the Developer Products team at [Stripe](https://stripe.com/docs/api). If you're surprised by that news, I assure you that you're not as surprised as [January 2020 Joel](https://www.youtube.com/watch?v=Ms7capx4Cb8) would have been to read it. Thus, the start of 2021 marks a season of change.
 
 And as I'm entering and navigating a new season of transition, I've been thinking about a concept: _idempotency_.
 
@@ -23,7 +23,7 @@ If you're not familiar with the **idempotency**, it describes the ability to exe
   style="padding-bottom:20px;max-width:350px"
 />
 
-The work I've been engaged in most recently at New Relic (_you'll soon see it in action by [signing up for a free account](https://newrelic.com/signup)_) has brought the concept into focus, as my team has been creating a consistent, simple, open installation architecture for New Relic One centered on the [open source CLI](https://github.com/newrelic/newrelic-cli) and an [open library of installation tasks](https://github.com/newrelic/open-install-library/tree/main/docs) tied into the [platform GraphQL service](https://api.newrelic.com/graphiql?#query=%7B%0A%20%20docs%20%7B%0A%20%20%20%20openInstallation%20%7B%0A%20%20%20%20%20%20recipeSearch%28criteria%3A%20%7BinstallTarget%3A%20%7Bos%3A%20LINUX%2C%20platform%3A%20AMAZON%7D%7D%29%20%7B%0A%20%20%20%20%20%20%20%20count%0A%20%20%20%20%20%20%20%20results%20%7B%0A%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20displayName%0A%20%20%20%20%20%20%20%20%20%20description%0A%20%20%20%20%20%20%20%20%20%20repository%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A). Consequently, there's been a lot of team talk about executing a _thing_ multiple times and seeing a reliable result.
+The work I've been engaged in most recently at New Relic has brought the concept into focus, as my team has been creating a consistent, simple, open installation architecture for New Relic One centered on the [New Relic CLI](https://github.com/newrelic/newrelic-cli) and an [open library of installation tasks](https://github.com/newrelic/open-install-library/tree/main/docs) tied into the platform's [GraphQL service](https://api.newrelic.com/graphiql?#query=%7B%0A%20%20docs%20%7B%0A%20%20%20%20openInstallation%20%7B%0A%20%20%20%20%20%20recipeSearch%28criteria%3A%20%7BinstallTarget%3A%20%7Bos%3A%20LINUX%2C%20platform%3A%20AMAZON%7D%7D%29%20%7B%0A%20%20%20%20%20%20%20%20count%0A%20%20%20%20%20%20%20%20results%20%7B%0A%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20displayName%0A%20%20%20%20%20%20%20%20%20%20description%0A%20%20%20%20%20%20%20%20%20%20repository%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A). Consequently, there's been a lot of team talk about executing a _thing_ multiple times and seeing a reliable result.
 
 In that way, the work we've been producing has been a proxy for the character of the team.
 
