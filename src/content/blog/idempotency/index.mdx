@@ -10,9 +10,9 @@ date: "2021-01-15"
 
 import ImageGallery from "components/ImageGallery";
 
-First, rather than bury the lead. I'll get to the point.
+First, rather than bury the lead. I'll get to the news.
 
-I'm completing my time at [New Relic](http://opensource.newrelic.com) this month and joining the Developer Products team at [Stripe](https://stripe.com/docs/api). If you're surprised by that news, I assure you that you're not as surprised as [January 2020 Joel](https://www.youtube.com/watch?v=Ms7capx4Cb8) would have been to read it. Thus, the start of 2021 marks a season of change.
+I'm completing my time as the head of open source at [New Relic](http://opensource.newrelic.com) this month and joining the Developer Products team at [Stripe](https://stripe.com/docs/api). If you're surprised by that news, I assure you that you're not as surprised as [January 2020 Joel](https://www.youtube.com/watch?v=Ms7capx4Cb8) would have been to read it. Thus, the start of 2021 marks a season of change.
 
 And as I'm entering and navigating a new season of transition, I've been thinking about a concept: _idempotency_.
 
@@ -23,7 +23,7 @@ If you're not familiar with the **idempotency**, it describes the ability to exe
   style="padding-bottom:20px;max-width:350px"
 />
 
-The work I've been engaged in most recently at New Relic has brought the concept into focus, as my team has been creating a consistent, simple, open installation architecture for New Relic One centered on the [New Relic CLI](https://github.com/newrelic/newrelic-cli) and an [open library of installation tasks](https://github.com/newrelic/open-install-library/tree/main/docs) tied into the platform's [GraphQL service](https://api.newrelic.com/graphiql?#query=%7B%0A%20%20docs%20%7B%0A%20%20%20%20openInstallation%20%7B%0A%20%20%20%20%20%20recipeSearch%28criteria%3A%20%7BinstallTarget%3A%20%7Bos%3A%20LINUX%2C%20platform%3A%20AMAZON%7D%7D%29%20%7B%0A%20%20%20%20%20%20%20%20count%0A%20%20%20%20%20%20%20%20results%20%7B%0A%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20displayName%0A%20%20%20%20%20%20%20%20%20%20description%0A%20%20%20%20%20%20%20%20%20%20repository%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A). Consequently, there's been a lot of team talk about executing a _thing_ multiple times and seeing a reliable result.
+The work I've been engaged in most recently at New Relic has brought the concept into focus, as my team has been creating a consistent, simple, open installation architecture for [the platform](https://one.newrelic.com) involving the open source [CLI](https://github.com/newrelic/newrelic-cli) and an [open library of installation tasks](https://github.com/newrelic/open-install-library/tree/main/docs). Consequently, there's been a lot of team talk about executing a _thing_ multiple times and seeing a reliable result.
 
 In that way, the work we've been producing has been a proxy for the character of the team.
 
@@ -39,11 +39,12 @@ Perhaps the most remarkable characteristic has been how consistent and reliably 
 
 That realization has me reflecting a bit on what makes that quality possible and how best to foster and replicate it. I can point to some key ingredients like a culture of mentored leadership, trust and autonomy, an emphasis on influence vs. authority, and shared vision; but what I keep coming back to is simply _gratitude_ for so many remarkable co-workers who've made those consistent and reliable outcomes possible.
 
-I try to live my life within a worldview that recognizes everything good that comes to me as a gift from a [generous host](https://bibleproject.com/explore/video/generosity/), and that certainly includes relationships. Good colleagues are a blessing, and I've received the benison of partnering with many admirable people.
 
 <ImageGallery />
 
-And it's those people, those gifts, which have occupied my thoughts of late and in particular how _idempotent_ I've found them to be - operating consistently and reliably. I'm sincerely grateful for so many capable, generous humans at [New Relic](https://newrelic.com) who've been a part of this chapter of my journey.
+I try to live my life within a worldview that recognizes everything good that comes to me as a gift from a [generous host](https://bibleproject.com/explore/video/generosity/), and that certainly includes relationships. Good colleagues are a blessing, and I've received the benison of partnering with many admirable people.
+
+And it's those people, those gifts, which have occupied my thoughts of late and in particular how _idempotent_ I've found them to be - operating consistently and reliably. I'm sincerely grateful for so many capable, generous humans at New Relic who've been a part of this chapter of my journey.
 
 To each of you: **thank you.**
 
