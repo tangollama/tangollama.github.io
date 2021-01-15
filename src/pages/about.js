@@ -34,7 +34,7 @@ export default ({ data }) => {
               </li>
               <li>and nonprofits navigate digital transformation</li>
             </ul>
-            Currently, I'm part of the Developer Products team at{" "}
+            Currently, I'm part of the Developer Products leadership team at{" "}
             <a target="_blank" href="https://stripe.com/docs" rel="noreferrer">
               Stripe
             </a>
