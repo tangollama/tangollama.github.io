@@ -36,7 +36,7 @@ export default ({ data }) => {
         <Container className="py-0 my-0">
           <h1
             style={{
-              marginTop: "10px"
+              marginTop: "10px",
             }}
           >
             <span className="first-name">{firstName}</span>&nbsp;
