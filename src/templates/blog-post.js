@@ -3,8 +3,10 @@ import { graphql } from "gatsby";
 import PostTemplate from "./post-template";
 import { CommentCount } from "gatsby-plugin-disqus";
 
-const SubTitle = ({ ttr, date, author, disqusConfig }) => (
+
+const SubTitle = ({ subTitle, date, author, disqusConfig }) => (
   <h5 className="text-muted mb-5">
+    {subTitle ? <span className="subTitle">{subTitle}</span> : null}
     {date} | {author} |{" "}
     <CommentCount config={disqusConfig} placeholder={"No comments"} />
   </h5>
@@ -26,7 +28,7 @@ export default ({ data }) => {
       title={post.frontmatter.title}
       subTitle={
         <SubTitle
-          ttr={post.timeToRead}
+          subTitle={post.frontmatter.subTitle}
           date={post.frontmatter.date}
           author={post.frontmatter.author}
           disqusConfig={disqusConfig}
@@ -46,6 +48,7 @@ export const query = graphql`
       body
       frontmatter {
         title
+        subTitle
         author
         date(formatString: "DD MMMM, YYYY")
       }
@@ -55,12 +58,13 @@ export const query = graphql`
       }
     }
     file(
-      extension: { eq: "jpg" }
+      name: { regex: "/feature/" }
+      extension: { in: ["jpg", "png"] }
       relativePath: { regex: $regex }
       relativeDirectory: { regex: "/content/blog/" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid
         }
       }

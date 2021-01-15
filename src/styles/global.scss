@@ -114,6 +114,14 @@ body {
   font-size: 1.35rem;
 }
 
+h5 {
+  .subTitle {
+    display: block;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+}
+
 .idempotenceThumb {
   min-height: 150px;
 }

@@ -14,10 +14,10 @@ export default () => {
         edges {
           node {
             childImageSharp {
-              thumb: fluid(maxHeight: 270) {
+              thumb: fluid(maxWidth: 350) {
                 src
               }
-              full: fluid(maxWidth: 1024) {
+              full: fluid(maxWidth: 1600) {
                 src
               }
             }
