@@ -42,7 +42,7 @@ export default ({ data }) => {
             <span className="first-name">{firstName}</span>&nbsp;
             <span className="last-name">{lastName}</span>
           </h1>
-          <p>{occupation}&nbsp;</p>
+          <p className="subHeading">{occupation}&nbsp;</p>
         </Container>
         <hr className="my-3 w-25" />
         <div className="d-md-inline-flex icons-container">
@@ -58,7 +58,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="https://linkedin.com/jworrall"
+            href="https://linkedin.com/in/jworrall"
             target="_blank"
             rel="noopener noreferrer"
           >
