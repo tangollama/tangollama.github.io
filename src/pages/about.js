@@ -34,11 +34,15 @@ export default ({ data }) => {
               </li>
               <li>and nonprofits navigate digital transformation</li>
             </ul>
-            Recently, I've joined the Platform leadership team at{" "}
-            <a target="_blank" href="https://stripe.com/docs" rel="noreferrer">
-              Stripe
-            </a>
-            .
+            Recently, I took over leadership of the{" "}
+            <a
+              target="_blank"
+              href="https://dashboard.stripe.com"
+              rel="noreferrer"
+            >
+              Stripe frontend platform
+            </a>{" "}
+            engineering organization.
           </p>
           <p>
             Previously, I served as the head of Open Source at{" "}

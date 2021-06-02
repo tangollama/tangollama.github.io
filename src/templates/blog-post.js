@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 import PostTemplate from "./post-template";
 import { CommentCount } from "gatsby-plugin-disqus";
 
-
 const SubTitle = ({ subTitle, date, author, disqusConfig }) => (
   <h5 className="text-muted mb-5">
     {subTitle ? <span className="subTitle">{subTitle}</span> : null}
