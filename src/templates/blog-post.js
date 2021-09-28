@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { getSrc } from "gatsby-plugin-image"
+import { getSrc } from "gatsby-plugin-image";
 import PostTemplate from "./post-template";
 import { CommentCount } from "gatsby-plugin-disqus";
 

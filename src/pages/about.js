@@ -44,9 +44,7 @@ export default ({ data }) => {
             </a>
             .
           </p>
-          <p>
-            I also do some advisor work with software companies. 
-          </p>
+          <p>I also do some advisor work with software companies.</p>
           <p>
             Previously, I led a turn-around in the{" "}
             <a
@@ -56,8 +54,7 @@ export default ({ data }) => {
             >
               frontend platform organization at Stripe
             </a>
-            .
-            Before that, I served as the head of Open Source at{" "}
+            . Before that, I served as the head of Open Source at{" "}
             <a
               target="_blank"
               href="https://opensource.newrelic.com"
