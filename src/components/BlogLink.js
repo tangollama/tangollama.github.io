@@ -7,7 +7,7 @@ export default (props) => {
   // console.debug(props);
   return (
     <Card className="card-container" as={Link} to={props.to}>
-      <Card.Img as={Img} fluid={props.featuredImage} className="h-50" />
+      <Card.Img src={props.featuredImage} className="h-50" />
       <Card.Body className="pt-3">
         <Card.Title>
           <h4>{props.title}</h4>

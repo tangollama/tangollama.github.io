@@ -14,12 +14,8 @@ export default () => {
         edges {
           node {
             childImageSharp {
-              thumb: fluid(maxWidth: 350) {
-                src
-              }
-              full: fluid(maxWidth: 1600) {
-                src
-              }
+              thumb: gatsbyImageData(layout: CONSTRAINED)
+              full: gatsbyImageData(layout: FULL_WIDTH)
             }
           }
         }

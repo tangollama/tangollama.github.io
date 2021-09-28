@@ -34,18 +34,30 @@ export default ({ data }) => {
               </li>
               <li>and nonprofits navigate digital transformation</li>
             </ul>
-            Recently, I took over leadership of the{" "}
+            I currently serve as the Chief Product Officer for{" "}
+            <a
+              target="_blank"
+              href="https://bibleproject.com/about"
+              rel="noreferrer"
+            >
+              BibleProject
+            </a>
+            .
+          </p>
+          <p>
+            I also do some advisor work with software companies. 
+          </p>
+          <p>
+            Previously, I led a turn-around in the{" "}
             <a
               target="_blank"
               href="https://dashboard.stripe.com"
               rel="noreferrer"
             >
-              Stripe frontend platform
-            </a>{" "}
-            engineering organization.
-          </p>
-          <p>
-            Previously, I served as the head of Open Source at{" "}
+              frontend platform organization at Stripe
+            </a>
+            .
+            Before that, I served as the head of Open Source at{" "}
             <a
               target="_blank"
               href="https://opensource.newrelic.com"
@@ -53,7 +65,7 @@ export default ({ data }) => {
             >
               New Relic
             </a>
-            . Before that, I led technology and marketing for{" "}
+            . Even earlier, I led technology and marketing for{" "}
             <a href="http://cure.org" target="_blank" rel="noreferrer">
               CURE International
             </a>
@@ -61,7 +73,7 @@ export default ({ data }) => {
             <a target="_blank" href="http://cure.org/curekids" rel="noreferrer">
               CUREkids
             </a>
-            . I'm also the co-founder of the{" "}
+            . I'm the co-founder of the{" "}
             <a href="http://hospitalrun.io" target="_blank" rel="noreferrer">
               HospitalRun
             </a>{" "}

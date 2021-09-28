@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { getSrc } from "gatsby-plugin-image"
 import PostTemplate from "./post-template";
 import { CommentCount } from "gatsby-plugin-disqus";
 
@@ -15,7 +16,7 @@ export default ({ data }) => {
   // console.debug(data);
   const post = data.mdx;
   // console.log(post.frontmatter.slug);
-  const img = data.file.childImageSharp;
+  const src = getSrc(data.file.childImageSharp);
   // console.log(img);
   const disqusConfig = {
     url: `https://joelworrall.com/blog/${post.fields.slug}/`,
@@ -33,7 +34,7 @@ export default ({ data }) => {
           disqusConfig={disqusConfig}
         />
       }
-      featuredImage={img.fluid.src}
+      featuredImage={src}
       excerpt={post.excerpt}
       html={post.body}
       disqusConfig={disqusConfig}
@@ -63,9 +64,7 @@ export const query = graphql`
       relativeDirectory: { regex: "/content/blog/" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1024) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
       relativePath
     }
