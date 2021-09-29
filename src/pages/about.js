@@ -46,7 +46,7 @@ export default ({ data }) => {
           </p>
           <p>I also do some advisor work with software companies.</p>
           <p>
-            Previously, I led a turn-around in the{" "}
+            Previously, I led the{" "}
             <a
               target="_blank"
               href="https://dashboard.stripe.com"
@@ -96,9 +96,9 @@ export default ({ data }) => {
           <p>
             With a bachelor's in computer science, a master's in religion, and
             twenty years of leadership experience in the tech and nonprofit
-            sectors, I'm a tough person to <em>categorize</em>. I like it that
-            way.
+            sectors, I'm a tough person to <em>categorize</em>.
           </p>
+          <p>I like it that way.</p>
           <p>
             If you're interested in talking more,{" "}
             <a
