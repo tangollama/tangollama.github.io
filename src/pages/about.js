@@ -34,26 +34,35 @@ export default ({ data }) => {
               </li>
               <li>and nonprofits navigate digital transformation</li>
             </ul>
-            Recently, I took over leadership of the{" "}
+            I currently serve as the Chief Product Officer for{" "}
+            <a
+              target="_blank"
+              href="https://bibleproject.com/about"
+              rel="noreferrer"
+            >
+              BibleProject
+            </a>
+            .
+          </p>
+          <p>I also do advisor work with a handful of software companies.</p>
+          <p>
+            Previously, I led the{" "}
             <a
               target="_blank"
               href="https://dashboard.stripe.com"
               rel="noreferrer"
             >
-              Stripe frontend platform
-            </a>{" "}
-            engineering organization.
-          </p>
-          <p>
-            Previously, I served as the head of Open Source at{" "}
+              frontend platform organization at Stripe
+            </a>
+            . Before that, I served as the{" "}
             <a
               target="_blank"
               href="https://opensource.newrelic.com"
               rel="noreferrer"
             >
-              New Relic
+              head of open source at New Relic
             </a>
-            . Before that, I led technology and marketing for{" "}
+            . Even earlier, I led technology and marketing for{" "}
             <a href="http://cure.org" target="_blank" rel="noreferrer">
               CURE International
             </a>
@@ -61,7 +70,7 @@ export default ({ data }) => {
             <a target="_blank" href="http://cure.org/curekids" rel="noreferrer">
               CUREkids
             </a>
-            . I'm also the co-founder of the{" "}
+            . I'm the co-founder of the{" "}
             <a href="http://hospitalrun.io" target="_blank" rel="noreferrer">
               HospitalRun
             </a>{" "}
@@ -87,9 +96,9 @@ export default ({ data }) => {
           <p>
             With a bachelor's in computer science, a master's in religion, and
             twenty years of leadership experience in the tech and nonprofit
-            sectors, I'm a tough person to <em>categorize</em>. I like it that
-            way.
+            sectors, I'm a tough person to <em>categorize</em>.
           </p>
+          <p>I like it that way.</p>
           <p>
             If you're interested in talking more,{" "}
             <a

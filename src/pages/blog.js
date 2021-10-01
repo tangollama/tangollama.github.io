@@ -9,7 +9,7 @@ export default ({ data }) => {
   const allPosts = data.allMdx.edges || [];
   const regex = /\/[blog].*\/|$/;
   const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex);
-  // console.debug(allPosts);
+  //console.debug(allPosts);
   return (
     <PageLayout>
       <SEO title="Blog" />
@@ -72,9 +72,7 @@ export const query = graphql`
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
           relativePath
         }

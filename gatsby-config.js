@@ -30,8 +30,8 @@ module.exports = {
     designations: [`Tech Leader`, `Team Builder`, `Tinkerer`, `Teacher`],
   },
   plugins: [
-    `gatsby-plugin-preload-link-crossorigin`,
-    `gatsby-plugin-catch-links`,
+    //`gatsby-plugin-preload-link-crossorigin`,
+    //`gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -75,8 +75,9 @@ module.exports = {
         extensions: [`.mdx`, `.md`],
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
