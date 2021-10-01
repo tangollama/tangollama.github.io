@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktangollama_github_io=self.webpackChunktangollama_github_io||[]).push([[883],{9616:function(e,t,n){n.r(t);var l=n(7294),u=n(2151);t.default=function(){return l.createElement(u.Xg,null,l.createElement(u.V1,null,"404: Not Found"))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-1751fb8e470c3f2b676d.js.map

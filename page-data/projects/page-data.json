@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-projects-js","path":"/projects/","result":{"data":{"allMdx":{"totalCount":0,"edges":[]},"allFile":{"edges":[]}},"pageContext":{}},"staticQueryHashes":["3144751780","3302432669","796719167"]}
+{
+    "componentChunkName": "component---src-pages-projects-js",
+    "path": "/projects/",
+    "result": {"data":{"allMdx":{"totalCount":0,"edges":[]},"allFile":{"edges":[]}},"pageContext":{}},
+    "staticQueryHashes": ["3144751780","3822011141","796719167"]}
