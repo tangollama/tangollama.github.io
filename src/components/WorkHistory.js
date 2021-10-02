@@ -1,12 +1,12 @@
 import React from "react";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image"
 import { Container, Row, Col, Badge } from "react-bootstrap";
 
 const CompanyCard = ({ frontmatter, image }) => {
   const { company, position, startDate, endDate, location } = frontmatter;
   return (
     <Container fluid className="m-auto work-history">
-      <Img
+      <GatsbyImage
         fluid={image}
         style={{
           maxHeight: "15vmax",

@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Gallery from "@browniebroke/gatsby-image-gallery";
-import "@browniebroke/gatsby-image-gallery/dist/style.css";
+//import "@browniebroke/gatsby-image-gallery/dist/style.css";
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -16,14 +16,18 @@ export default () => {
             childImageSharp {
               thumb: gatsbyImageData(layout: CONSTRAINED)
               full: gatsbyImageData(layout: FULL_WIDTH)
+              meta: fixed {
+                originalName
+              }
             }
           }
         }
       }
     }
   `);
-  // console.debug("Images!", data);
+  console.debug("Images!", data);
   const images = data.allFile.edges.map(({ node }) => node.childImageSharp);
+  console.debug("Images",  images);
 
   // `images` is an array of objects with `thumb` and `full`
   return (
