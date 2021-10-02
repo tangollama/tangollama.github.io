@@ -83,7 +83,7 @@ I am absolutely still committed to the open source project as it moves fully out
 
 The project continues to make good progress, and — if you’re interested in checking it out — it’s actually ready for use. You can [demo, install, or download it directly to your desktop](http://hospitalrun.io/tryit), thanks to the magic of projects like [Electron](http://electron.atom.io) and [Docker](http://docker.com).
 
-<img alt="Try HospitalRun" src="/imgs/try_hospitalrun.png" style="width: 80%;margin:20px;" />
+![Try HospitalRun](./try_hospitalrun.png)
 
 You can try HospitalRun right now at [hospitalrun.io/tryit](http://hospitalrun.io/tryit).
 One of the _other_ things I’m hoping to do in 2017 is sort out what structure or entity is best equipped to stand with HospitalRun in this next season. If you have thoughts or assistance to offer, [please say so](mailto:joel@joelworrall.com?subject=I+think+I+can+help+you+with+HospitalRun). If you’re leading an organization that would be interested in being a part of that solution, again, [please say so](mailto:joel@joelworrall.com?subject=Let+me+help+you+make+EMR's+great...+for+once.).

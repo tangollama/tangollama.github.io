@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import { Container, Badge, Col, Row } from "react-bootstrap";
 

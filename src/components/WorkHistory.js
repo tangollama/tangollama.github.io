@@ -1,5 +1,5 @@
 import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import { Container, Row, Col, Badge } from "react-bootstrap";
 
 const CompanyCard = ({ frontmatter, image }) => {
