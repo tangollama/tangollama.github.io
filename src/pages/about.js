@@ -62,14 +62,11 @@ export default ({ data }) => {
             >
               head of open source at New Relic
             </a>
-            . Even earlier, I led technology and marketing for{" "}
+            . Even earlier (2009-2016), I led technology and marketing for{" "}
             <a href="http://cure.org" target="_blank" rel="noreferrer">
               CURE International
             </a>
-            , where I helped to reshape their brand and created{" "}
-            <a target="_blank" href="http://cure.org/curekids" rel="noreferrer">
-              CUREkids
-            </a>
+            , where I helped to reshape their brand and created CUREkids
             . I'm the co-founder of the{" "}
             <a href="http://hospitalrun.io" target="_blank" rel="noreferrer">
               HospitalRun
