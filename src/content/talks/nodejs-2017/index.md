@@ -4,6 +4,7 @@ subTitle: "World-changing JavaScript from Developing world Healthcare: HospitalR
 tags: ["open source"]
 excerpt: "Introducing HospitalRun as a JS Foundation project"
 author: "Joel Worrall"
+heroImage: '/images/talks/nodejs-2017.png'
 date: "2017-10-16"
 ---
 

@@ -1,0 +1,50 @@
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { Container, Image } from "react-bootstrap";
+import PageLayout from "../../components/PageLayout.jsx";
+import PageTitle from "../../components/PageTitle.jsx";
+import SubTitle from "../../components/SubTitle.jsx";
+import DisqusComments from "../../components/DisqusComments.jsx";
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+	return posts.map((post) => ({
+		params: { slug: post.id },
+		props: post,
+	}));
+}
+
+type Props = CollectionEntry<'blog'>;
+
+const post = Astro.props;
+const { title, pubDate, subTitle, heroImage, slug } = post.data;
+const { Content } = await render(post);
+
+const disqusConfig = {
+	url: `https://joelworrall.com/blog/${post.id}/`,
+	identifier: post.id,
+	title: title,
+};
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={title ?? SITE_TITLE} description={SITE_DESCRIPTION} image={heroImage} />
+	</head>
+	<body>
+		<PageLayout client:load>
+			<Container className="text-center" fluid>
+				<PageTitle title={title} />
+				<SubTitle subTitle={subTitle} pubDate={pubDate} />
+				{heroImage && <img src={heroImage} alt={title} class="img-fluid mb-4" style="max-width: 700px; width: 100%; margin: 0 auto 1.5rem; display: block;" />}
+				<Container style={{ marginTop: "20px" }} className="post-content">
+					<Content />
+					<DisqusComments config={disqusConfig} client:only="react" />
+				</Container>
+			</Container>
+		</PageLayout>
+	</body>
+</html>

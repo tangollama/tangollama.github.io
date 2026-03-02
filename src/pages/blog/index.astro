@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import PageLayout from '../../components/PageLayout.jsx';
+import BlogLink from '../../components/BlogLink.jsx';
+import { Container } from 'react-bootstrap';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Blog | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<PageLayout client:load>
+			<Container className="pt-3" fluid>
+				<h2 class="mb-4">Blog</h2>
+				<Container
+					fluid
+					className="p-3 w-auto text-left d-flex flex-wrap justify-content-center"
+				>
+					{posts.map((post) => (
+						<div class="p-3">
+							<BlogLink
+								to={`/blog/${post.id}`}
+								heroImage={post.data.heroImage}
+								title={post.data.title}
+								subtitle={post.data.subTitle}
+								excerpt={post.data.excerpt}
+							/>
+						</div>
+					))}
+				</Container>
+			</Container>
+		</PageLayout>
+	</body>
+</html>

@@ -4,6 +4,7 @@ subTitle: "Building contributor-centric systems"
 tags: ["open source"]
 excerpt: "What do nonprofits and open source projects have to teach one another when it comes to contribution?"
 author: "Joel Worrall"
+heroImage: '/images/talks/ato-2020.jpg'
 date: "2020-11-18"
 ---
 

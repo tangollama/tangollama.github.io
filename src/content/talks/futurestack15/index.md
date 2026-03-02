@@ -4,6 +4,7 @@ subTitle: "Accelerating Innovation - Do More with Less in Your Startup"
 tags: ["open source"]
 excerpt: "Leverage New Relic to go faster in your startup"
 author: "Joel Worrall"
+heroImage: '/images/talks/futurestack15.jpg'
 date: "2015-12-18"
 ---
 

@@ -4,6 +4,7 @@ subTitle: "Surviving the Offline Apocalypse"
 tags: ["open source"]
 excerpt: "Offline-first development in a zombie apocalypse motif"
 author: "Joel Worrall"
+heroImage: '/images/talks/futurestack13.jpg'
 date: "2013-11-11"
 ---
 

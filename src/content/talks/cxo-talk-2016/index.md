@@ -4,6 +4,7 @@ subTitle: "Digital Transformation in a Medical Non Profit"
 tags: ["open source"]
 excerpt: "An interview at FutureStack16 with CXO Talk"
 author: "Joel Worrall"
+heroImage: '/images/talks/cxo-talk-2016.jpg'
 date: "2017-01-03"
 ---
 

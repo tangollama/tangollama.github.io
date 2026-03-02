@@ -4,6 +4,7 @@ subTitle: "Introducing New Relic One Programmability"
 tags: ["programmability"]
 excerpt: "My on-stage interview on programmability in New Relic One at FutureStack19 in New York"
 author: "Joel Worrall"
+heroImage: '/images/talks/futurestack19.png'
 date: "2019-10-17"
 ---
 
