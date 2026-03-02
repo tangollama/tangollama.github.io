@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 let mandoAudio;
 if (typeof window !== "undefined") {
-  mandoAudio = new Audio("../../public/sounds/Mando_Note.mp3");
+  mandoAudio = new Audio("/sounds/Mando_Note.mp3");
   mandoAudio.volume = 0.1;
 } else {
   // SSR fallback: provide noop audio methods so code can run server-side

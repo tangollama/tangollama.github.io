@@ -11982,9 +11982,6 @@ textarea.form-control-lg {
 .theme-light .icons:hover.linkedin {
   color: #2867b2;
 }
-.theme-light .icons:hover.twitter {
-  color: #1da1f2;
-}
 .theme-light .icons:hover.fcc {
   color: #006400;
 }
@@ -12005,9 +12002,6 @@ textarea.form-control-lg {
 }
 .theme-dark .icons:hover.linkedin {
   color: #2867b2;
-}
-.theme-dark .icons:hover.twitter {
-  color: #1da1f2;
 }
 .theme-dark .icons:hover.fcc {
   color: #006400;
@@ -12134,6 +12128,10 @@ body {
   font-size: 3.75rem;
   margin: 0.1rem;
   color: #6c757d;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  overflow: visible;
 }
 
 .quote {
@@ -12173,6 +12171,63 @@ h5 .subTitle, .h5 .subTitle {
 
 .idempotenceThumb {
   min-height: 150px;
+}
+
+/** Blog/Talk post content styling */
+.post-content {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 4px;
+}
+.post-content p {
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+.post-content h1, .post-content .h1, .post-content h2, .post-content .h2, .post-content h3, .post-content .h3, .post-content h4, .post-content .h4, .post-content h5, .post-content .h5, .post-content h6, .post-content .h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.post-content blockquote {
+  border-left: 4px solid #ced4da;
+  padding: 0.5rem 1.5rem;
+  margin: 1.5rem 0;
+  color: #6c757d;
+  font-style: italic;
+}
+.post-content figcaption {
+  text-align: center;
+  color: #6c757d;
+  font-size: 0.85em;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+}
+.post-content iframe {
+  max-width: 100%;
+  display: block;
+  margin: 1.5rem auto;
+}
+.post-content code {
+  background: #f8f9fa;
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+.post-content pre code {
+  background: none;
+  padding: 0;
+}
+
+.text-justify img,
+.container img:not(.img-fluid):not(.card-img-top) {
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 500px) {

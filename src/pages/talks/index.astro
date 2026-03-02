@@ -26,7 +26,7 @@ const talks = (await getCollection('talks')).sort((a, b) => {
 					className="p-3 w-auto text-left d-flex flex-wrap justify-content-center"
 				>
 					{talks.map((talk) => (
-						<div class="p-3" style="max-width: 320px">
+						<div class="p-3">
 							<Card className="card-container" href={`/talks/${talk.id}`} as="a">
 								{talk.data.heroImage && (
 									<Card.Img src={talk.data.heroImage} className="h-50" />

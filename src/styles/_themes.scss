@@ -22,7 +22,6 @@ $themes: (
     hrefColor: $dark-blue,
     github: $black,
     linkedin: $linkedin-blue,
-    twitter: $twitter-blue,
     fcc: $fcc-green,
     hr: $hr-green,
     mail: $yellow,
@@ -46,7 +45,6 @@ $themes: (
     magicColor: $white,
     github: $black,
     linkedin: $linkedin-blue,
-    twitter: $twitter-blue,
     fcc: $fcc-green,
     hr: $hr-green,
     mail: $yellow,
@@ -176,9 +174,6 @@ $themes: (
     }
     &.linkedin {
       color: themed("linkedin");
-    }
-    &.twitter {
-      color: themed("twitter");
     }
     &.fcc {
       color: themed("fcc");

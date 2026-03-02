@@ -1,8 +1,5 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.jsx';
-import Header from '../components/Header.jsx';
-import FormattedDate from '../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
@@ -77,17 +74,6 @@ const latest = posts[0];
               icon={["fab", "linkedin"]}
               className="icons linkedin"
               title="LinkedIn"
-            />
-          </a>
-          <a
-            href="https://www.twitter.com/tangollama"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "twitter"]}
-              className="icons twitter"
-              title="Twitter"
             />
           </a>
           <a
