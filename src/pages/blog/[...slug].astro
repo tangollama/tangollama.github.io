@@ -39,8 +39,8 @@ const disqusConfig = {
 			<Container className="text-center" fluid>
 				<PageTitle title={title} />
 				<SubTitle subTitle={subTitle} pubDate={pubDate} />
-				{heroImage && <img src={heroImage} alt={title} className="img-fluid mb-4" />}
-				<Container style={{ marginTop: "20px" }} className="text-justify">
+				{heroImage && <img src={heroImage} alt={title} class="img-fluid mb-4" style="max-width: 700px; width: 100%; margin: 0 auto 1.5rem; display: block;" />}
+				<Container style={{ marginTop: "20px" }} className="post-content">
 					<Content />
 					<DisqusComments config={disqusConfig} client:only="react" />
 				</Container>

@@ -33,8 +33,8 @@ const { Content } = await render(talk);
 			<Container className="text-center" fluid>
 				<PageTitle title={title}>{""}</PageTitle>
 				<SubTitle subTitle={subTitle} pubDate={displayDate} />
-				{heroImage && <img src={heroImage} alt={title} class="img-fluid mb-4" />}
-				<Container style={{ marginTop: "20px" }} className="text-justify">
+				{heroImage && <img src={heroImage} alt={title} class="img-fluid mb-4" style="max-width: 700px; width: 100%; margin: 0 auto 1.5rem; display: block;" />}
+				<Container style={{ marginTop: "20px" }} className="post-content">
 					<Content />
 				</Container>
 			</Container>

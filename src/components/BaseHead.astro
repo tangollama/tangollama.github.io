@@ -3,6 +3,9 @@
 // all pages through the use of the <BaseHead /> component.
 // Astro will automatically compile SCSS to CSS.
 import '../styles/global.scss';
+// FA CSS must be imported statically in SSG; auto-injection via document.head
+// doesn't run server-side and leaves icons unsized.
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import type { ImageMetadata } from 'astro';
 import FallbackImage from '../assets/imgs/bg03.jpg';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
@@ -32,6 +35,11 @@ const imageSrc = typeof image === 'string' ? image : image.src;
 	href={new URL('rss.xml', Astro.site)}
 />
 <meta name="generator" content={Astro.generator} />
+
+<!-- Google Fonts: Raleway (matches the original Gatsby site) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet" />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />

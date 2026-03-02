@@ -9,8 +9,6 @@ body {
   font-display: swap;
   height: 100%;
   width: 100%;
-  // font-size: calc(16px * ((80vw - 700px) / (1600 - 400)));
-  // line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
 }
 
 * {
@@ -83,6 +81,11 @@ body {
   font-size: 3.75rem;
   margin: 0.1rem;
   color: $gray-600;
+  // Ensure SVG-based FA icons respect font-size
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  overflow: visible;
 }
 
 .quote {
@@ -124,6 +127,72 @@ h5 {
 
 .idempotenceThumb {
   min-height: 150px;
+}
+
+/** Blog/Talk post content styling */
+.post-content {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 4px;
+  }
+
+  p {
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    border-left: 4px solid $gray-400;
+    padding: 0.5rem 1.5rem;
+    margin: 1.5rem 0;
+    color: $gray-600;
+    font-style: italic;
+  }
+
+  figcaption {
+    text-align: center;
+    color: $gray-600;
+    font-size: 0.85em;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  iframe {
+    max-width: 100%;
+    display: block;
+    margin: 1.5rem auto;
+  }
+
+  code {
+    background: $gray-100;
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+
+  pre code {
+    background: none;
+    padding: 0;
+  }
+}
+
+// Also constrain images globally when no specific class is used
+.text-justify img,
+.container img:not(.img-fluid):not(.card-img-top) {
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 500px) {
