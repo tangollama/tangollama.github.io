@@ -4,6 +4,7 @@ subTitle: "Be smart, get things done, and change the world."
 tags: ["open source"]
 excerpt: "Lightning Talk Winner from BOS 2012"
 author: "Joel Worrall"
+heroImage: '/images/talks/bos2012.jpg'
 date: "2012-10-23"
 ---
 
