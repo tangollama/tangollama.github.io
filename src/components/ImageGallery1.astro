@@ -1,0 +1,18 @@
+---
+// src/components/ImageGalleryIsland.astro
+import ImageGallery from "./ImageGallery.jsx";
+
+// Grab all images in this gallery folder
+const rawImages = import.meta.glob("../assets/gallery-1/*.{png,jpg,jpeg,webp}", {
+  eager: true,
+  import: "default",
+});
+
+const images = Object.entries(rawImages).map(([path, src]) => {
+  const fileName = path.split("/").pop() || "";
+  const alt = fileName.replace(/\.[^.]+$/, "").replace(/[-_]/g, " ");
+  return { src, alt };
+});
+---
+
+<ImageGallery images={images} client:visible />

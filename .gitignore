@@ -1,5 +1,6 @@
 .DS_Store
 cis191/examples/unit03_HTML/styles.css.map
-public
 .cache
 node_modules
+dist/
+.astro/

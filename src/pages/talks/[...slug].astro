@@ -1,0 +1,43 @@
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { Container } from 'react-bootstrap';
+import PageLayout from '../../components/PageLayout.jsx';
+import PageTitle from '../../components/PageTitle.jsx';
+import SubTitle from '../../components/SubTitle.jsx';
+
+export async function getStaticPaths() {
+	const talks = await getCollection('talks');
+	return talks.map((talk) => ({
+		params: { slug: talk.id },
+		props: talk,
+	}));
+}
+
+type Props = CollectionEntry<'talks'>;
+
+const talk = Astro.props;
+const { title, subTitle, heroImage, date, pubDate } = talk.data;
+const displayDate = date ?? pubDate;
+const { Content } = await render(talk);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={title ?? SITE_TITLE} description={SITE_DESCRIPTION} image={heroImage} />
+	</head>
+	<body>
+		<PageLayout client:load>
+			<Container className="text-center" fluid>
+				<PageTitle title={title}>{""}</PageTitle>
+				<SubTitle subTitle={subTitle} pubDate={displayDate} />
+				{heroImage && <img src={heroImage} alt={title} class="img-fluid mb-4" />}
+				<Container style={{ marginTop: "20px" }} className="text-justify">
+					<Content />
+				</Container>
+			</Container>
+		</PageLayout>
+	</body>
+</html>

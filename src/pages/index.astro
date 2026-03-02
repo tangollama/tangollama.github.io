@@ -1,0 +1,134 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.jsx';
+import Header from '../components/Header.jsx';
+import FormattedDate from '../components/FormattedDate.astro';
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import PageLayout from "../components/PageLayout.jsx";
+import BlogLink from '../components/BlogLink.jsx';
+import { Container } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import bgImg from '../assets/imgs/bg03.jpg';
+
+// Site metadata (ported from your Gatsby config)
+const firstName = 'Joel';
+const lastName = 'Worrall';
+const occupation = 'Tech Leader | Team Builder | Tinkerer | Teacher';
+const unemployed = false;
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const latest = posts[0];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<PageLayout client:load>
+      <Container className="text-center pt-5 mt-5" fluid>
+        <Image
+          width="600"
+          fluid
+          src={bgImg}
+          alt="Joel Worrall"
+        />
+        {unemployed && (
+          <p className="mt-2">
+            <b> Hey! I am looking for new opportunities :)</b>
+          </p>
+        )}
+        <Container className="py-0 my-0">
+          <h1
+            style={{
+              marginTop: "10px",
+            }}
+          >
+            <span className="first-name">{firstName}</span>&nbsp;
+            <span className="last-name">{lastName}</span>
+          </h1>
+          <p className="subHeading">{occupation}&nbsp;</p>
+        </Container>
+        <hr className="my-3 w-25" />
+        <div className="d-md-inline-flex icons-container">
+          <a
+            href="https://www.github.com/tangollama"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "github"]}
+              className="icons github"
+              title="GitHub"
+            />
+          </a>
+          <a
+            href="https://linkedin.com/in/jworrall"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "linkedin"]}
+              className="icons linkedin"
+              title="LinkedIn"
+            />
+          </a>
+          <a
+            href="https://www.twitter.com/tangollama"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "twitter"]}
+              className="icons twitter"
+              title="Twitter"
+            />
+          </a>
+          <a
+            href="mailto:joel@joelworrall.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fas", "envelope"]}
+              className="icons mail"
+              title="e-mail"
+            />
+          </a>
+          <a href="../../joelworrallresume.pdf" target="_blank" download>
+            <FontAwesomeIcon
+              icon={["fas", "file-alt"]}
+              className="icons file"
+              title="Resume"
+            />
+          </a>
+        </div>
+      </Container>
+      <h2 style="margin-top: 50px">The Latest</h2>
+      <Container
+        fluid
+        className="p-3 w-auto text-left d-flex flex-wrap justify-content-center"
+      >
+        {latest ? (
+          <div class="p-3">
+            <BlogLink
+              to={`/blog/${latest.id}`}
+              heroImage={latest.data.heroImage}
+              title={latest.data.title}
+              subtitle={latest.data.subTitle}
+              excerpt={latest.data.excerpt}
+            />
+          </div>
+					) : (
+						<p>No posts yet.</p>
+					)}
+      </Container>
+    </PageLayout>
+	</body>
+</html>
