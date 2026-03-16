@@ -26,6 +26,7 @@ $themes: (
     hr: $hr-green,
     mail: $yellow,
     file: $dark-blue,
+    shirt: red,
     iconBackground: $white,
     cardBackground: $white,
   ),
@@ -49,6 +50,7 @@ $themes: (
     hr: $hr-green,
     mail: $yellow,
     file: $dark-blue,
+    shirt: red,
     iconBackground: $black,
     cardBackground: $dark-gray,
   ),
@@ -186,6 +188,9 @@ $themes: (
     }
     &.file {
       color: themed("file");
+    }
+    &.shirt {
+      color: themed("shirt");
     }
   }
 }
